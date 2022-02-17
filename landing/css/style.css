@@ -68,7 +68,7 @@ h4.subhed {
    font-size: 16px;
 }
 .title-f{
-    color: #000000;
+    color: #004ca2;
     font-size: 30px;
     font-weight: 600;
 }
@@ -158,7 +158,7 @@ h4.subhed {
 	margin-right:7px;
 }
 .WhyChoose
-{background-image:url("../images/whybg.png");background-repeat:no-repeat;background-position: center bottom;/* padding-top: 148px; */padding-bottom: 208px;background-size: cover;}
+{background-image:url("../images/whybg.png");background-repeat:no-repeat;background-position: center bottom;/* padding-top: 148px; padding-bottom: 208px; */background-size: cover;}
 .feature-section .card {
 
 box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 21%);
@@ -228,7 +228,7 @@ background-image: url(../images/dts-payment-accepted.png);
 	height:610px;
 }
 section {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .payment-gateway-section .card
 {
@@ -240,7 +240,8 @@ box-shadow: 0 10px 20px 0 rgb(0 0 0 / 18%);
 }
 
 
-.how-it-works{background-image: url(../images/howbg.png);background-repeat: no-repeat;background-position: center top;padding-bottom: 0px;background-size: cover;padding-top: 180px;}
+.how-it-works{background-image: url(../images/howbg.png);background-repeat: no-repeat;background-position: center top;padding-bottom: 0px;background-size: cover;
+    /* padding-top: 180px;*/} 
 .testimonial-section{
     /* background-image: url(../images/testimonial-bg.png); */
     /* background-repeat: no-repeat; */
@@ -2371,3 +2372,88 @@ p
 {
 position:relative;
 }
+
+
+/* Agregando logos Merchants Accepting Payment */
+
+.payment-logos__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+}
+
+.payment-logos__icon {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 0 10px;
+    background: url(../images/payment/payment-logos.png) no-repeat top left;
+}
+
+.payment-logos__icon.payment-logos__icon--mir {
+    background-position: -64px -63px;
+    width: 91px;
+    height: 25px;
+}
+
+.payment-logos__icon.payment-logos__icon--visa {
+    background-position: -91px 0;
+    width: 91px;
+    height: 29px;
+}
+
+.payment-logos__icon.payment-logos__icon--mastercard {
+    background-position: -183px 0;
+    width: 52px;
+    height: 41px;
+}
+
+.payment-logos__icon.payment-logos__icon--ym {
+    background-position: -91px -145px;
+    width: 90px;
+    height: 21px;
+}
+
+.payment-logos__icon.payment-logos__icon--wire {
+    background-position: 0 -63px;
+    width: 63px;
+    height: 40px;
+}
+
+.payment-logos__icon.payment-logos__icon--faster-payments {
+    background-position: 0 -104px;
+    width: 56px;
+    height: 40px;
+}
+
+.payment-logos__icon.payment-logos__icon--sepa {
+    background-position: 0 0;
+    width: 90px;
+    height: 33px;
+}
+
+.payment-logos__icon.payment-logos__icon--pci {
+    background-position: 0 -34px;
+    width: 90px;
+    height: 28px;
+}
+
+.payment-logos__icon.payment-logos__icon--btc {
+    background-position: 0 -167px;
+    width: 90px;
+    height: 20px;
+}
+
+.payment-logos__icon.payment-logos__icon--eth {
+    background-position: 0 -188px;
+    width: 25px;
+    height: 40px;
+}
+
+/* Fin logos Merchants Accepting Payment */
