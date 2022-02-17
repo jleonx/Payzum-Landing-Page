@@ -1,845 +1,1094 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="1xz8ovzcWwaX6yfVVYgJCgUI5KlbuIExX8uZbYxk">
-    <title>Payzum</title>
-    <!-- Scripts -->
+  <!-- Bootstrap CSS -->
+  <link href="landing/css/bootstrap5.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="landing/css/font-awesome/css/font-awesome.min.css">
+  <!-- Fontawesome -->
+  <link href="landing/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+  <!-- Animate.style -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
-    <link href="landing/css/fonts.googleapis.com_css2.css" rel="stylesheet">
 
-    <link href="landing/css/fonts.googleapis.com_css.css" rel="stylesheet">
+  <link href="landing/css/mdb.css" rel="stylesheet"> 
+  <link href="landing/css/style.css" rel="stylesheet">
+  <link href="landing/css/custom.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>Payzum</title>
 
-    <link href="landing/css/mdb.min.css" rel="stylesheet">
-    <link href="landing/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light top-menu">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="landing/images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#howitworks">How It Works</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
-                        <li><a href="#login" class="btn btn-rounded">Sign In</a></li>
-                        <li><a href="#register" class="btn btn-primary btn-rounded t-blue">Sign Up </a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section class="banner-bg">
-        <div class="container banner-container">
-            <div class="table-content">
-                <div class="col-md-6">
-                    <h1 class="title-f h1 darkblue">Grow your business digitally and accept payment</h1>
-                    <div class="bannerbtn">
-                        <a href="#register" class="btn btn-primary t-green">Get Started</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center bannerrighticon">
-                    <img src="landing/images/Payzumright.png">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="aboutusbg" id="about">
-        <div class="container">
-            <div class="row table-content">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
-                    <img src="landing/images/aboutus.png" />
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 abouticon">
-                    <h2 class="title-f pb-2">About Payzum</h2>
-                    <p class="content">
-                    <p>Payzum was founded in 2020 as a Cryptocurrency&nbsp;payment processor and has since become a
-                        trusted provider of payment services supporting&nbsp;Bitcoin, Ethereum, Litecoin, Bitcoin Cash
-                        and Tethe... </p>
-                    <div class="bannerbtn">
-                        <a href="#" class="btn btn-primary bluebtn">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="WhyChoose feature-section" id="features">
-        <div class="container">
-            <h2 class="title-f text-center">Why Use Payzum Payment?</h2>
-            <div class="row mt-5">
-                <div class="col-md-6 col-sm-6 col-12">
-                    <div class="table-content">
-                        <div class="whyimg">
-                            <svg id="Layer_1" enable-background="new 0 0 64 64" height="100" viewBox="0 0 64 64" width="100"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path d="m2 25v33c0 2.209 1.791 4 4 4h52c2.209 0 4-1.791 4-4v-36c0-1.105-.895-2-2-2h-13" fill="#4c506e" />
-                                    <path d="m62 32c0-1.105-.895-2-2-2h-53c-2.761 0-5-2.239-5-5 0-2.761 2.239-5 5-5h53c1.105 0 2 .895 2 2z"
-                                        fill="#363a4f" />
-                                    <path d="m7 23c-1.105 0-2 .895-2 2v4.578c.613.268 1.288.422 2 .422h53v-7z" fill="#2c2f41" />
-                                    <path
-                                        d="m51.5 25h-41c-.828 0-1.5-.672-1.5-1.5 0-.828.672-1.5 1.5-1.5h41c.828 0 1.5.672 1.5 1.5 0 .828-.672 1.5-1.5 1.5z"
-                                        fill="#4c506e" />
-                                    <circle cx="32" cy="17" fill="#f6b940" r="15" />
-                                    <path
-                                        d="m32 2c-8.284 0-15 6.716-15 15 0 3.382 1.133 6.491 3.02 9h14.98c2.209 0 4-1.791 4-4v-18.262c-2.091-1.106-4.47-1.738-7-1.738z"
-                                        fill="#fad85d" />
-                                    <path d="m22 17h-2c0 6.617 5.383 12 12 12v-2c-5.514 0-10-4.486-10-10z" fill="#fce797" />
-                                    <path d="m32 5v2c5.514 0 10 4.486 10 10h2c0-6.617-5.383-12-12-12z" fill="#fce797" />
-                                    <path
-                                        d="m39 14c0-2.206-1.794-4-4-4v-2h-2v2h-1v-2h-2v2h-4v2h2v10h-2v2h4v2h2v-2h1v2h2v-2c2.206 0 4-1.794 4-4 0-1.2-.542-2.266-1.382-3 .84-.734 1.382-1.8 1.382-3zm-2 6c0 1.103-.897 2-2 2h-5v-4h5c1.103 0 2 .897 2 2zm-7-4v-4h5c1.103 0 2 .897 2 2s-.897 2-2 2z"
-                                        fill="#fff" />
-                                    <path d="m9 30v22c0 2.209 1.791 4 4 4h49v-24c0-1.105-.895-2-2-2h-13" fill="#787faa" />
-                                    <path d="m62 40h-9c-2.761 0-5 2.239-5 5 0 2.761 2.239 5 5 5h9" fill="#4c506e" />
-                                    <circle cx="53" cy="45" fill="#363a4f" r="2" />
-                                    <path
-                                        d="m42.5 35h-28c-.828 0-1.5-.672-1.5-1.5 0-.828.672-1.5 1.5-1.5h28c.828 0 1.5.672 1.5 1.5 0 .828-.672 1.5-1.5 1.5z"
-                                        fill="#9da1bf" />
-                                    <path
-                                        d="m56.5 54h-28c-.828 0-1.5-.672-1.5-1.5 0-.828.672-1.5 1.5-1.5h28c.828 0 1.5.672 1.5 1.5 0 .828-.672 1.5-1.5 1.5z"
-                                        fill="#9da1bf" />
-                                    <path
-                                        d="m30 26h2v-2h1v2h2v-2c2.206 0 4-1.794 4-4 0-1.2-.542-2.266-1.382-3 .84-.734 1.382-1.8 1.382-3 0-2.206-1.794-4-4-4v-2h-2v2h-1v-2h-2v2h-4v2h2v10h-2v2h4zm5-14c1.103 0 2 .897 2 2s-.897 2-2 2h-5v-4zm-5 6h5c1.103 0 2 .897 2 2s-.897 2-2 2h-5z" />
-                                    <path d="m22 17h-2c0 6.617 5.383 12 12 12v-2c-5.514 0-10-4.486-10-10z" />
-                                    <path d="m42 17h2c0-6.617-5.383-12-12-12v2c5.514 0 10 4.486 10 10z" />
-                                    <path
-                                        d="m60 19h-12.13c.084-.659.13-1.327.13-2 0-8.822-7.178-16-16-16s-16 7.178-16 16c0 .673.046 1.341.13 2h-9.13c-3.309 0-6 2.691-6 6v33c0 2.757 2.243 5 5 5h52c2.757 0 5-2.243 5-5v-36c0-1.654-1.346-3-3-3zm0 2c.551 0 1 .449 1 1v7.184c-.314-.112-.648-.184-1-.184h-17.421c2.396-2.12 4.103-4.916 4.904-8zm-28-18c7.72 0 14 6.28 14 14 0 4.903-2.6 9.474-6.797 12h-7.203-7.203c-4.197-2.526-6.797-7.097-6.797-12 0-7.72 6.28-14 14-14zm-25 18h9.517c.801 3.084 2.508 5.88 4.904 8h-14.421c-2.206 0-4-1.794-4-4s1.794-4 4-4zm54 28h-8c-2.206 0-4-1.794-4-4s1.794-4 4-4h8zm0-10h-8c-3.309 0-6 2.691-6 6s2.691 6 6 6h8v7c0 1.654-1.346 3-3 3h-52c-1.654 0-3-1.346-3-3v-28.54c1.063.954 2.462 1.54 4 1.54h53c.551 0 1 .449 1 1z" />
-                                    <path
-                                        d="m50 45c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3-3 1.346-3 3zm4 0c0 .551-.449 1-1 1s-1-.449-1-1 .449-1 1-1 1 .449 1 1z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="whytext">
-                            <h5 class="card-title darkblue">2Factor Authentication</h5>
-                            <p class="content">Security will always be a top priority in every decision we make, We
-                                provide access to a second factor authentication to enable you fully secure your
-                                accounts. We also provide other security features that make our service highly secure
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-12">
-                    <div class="table-content">
-                        <div class="whyimg">
-                            <svg id="Layer_2" enable-background="new 0 0 510 510" height="100" viewBox="0 0 510 510" width="100"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <linearGradient id="lg1">
-                                    <stop offset="0" stop-color="#edf5ff" />
-                                    <stop offset="1" stop-color="#d5e8fe" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="117.907" x2="404.713" xlink:href="#lg1" y1="46.91"
-                                    y2="333.716" />
-                                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="251.442" x2="259.282" y1="-5.718" y2="114.127">
-                                    <stop offset="0" stop-color="#b5dbff" />
-                                    <stop offset="1" stop-color="#48b2e3" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="32.241" x2="46.622" y1="36.623" y2="47.579">
-                                    <stop offset="0" stop-color="#ff637b" />
-                                    <stop offset="1" stop-color="#e63950" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="72.372" x2="86.753" y1="36.623" y2="47.579">
-                                    <stop offset="0" stop-color="#ffda2d" />
-                                    <stop offset="1" stop-color="#fdbf00" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="108.358" x2="142.441" y1="31.645" y2="65.728">
-                                    <stop offset="0" stop-color="#b9dd39" />
-                                    <stop offset="1" stop-color="#0b799d" />
-                                </linearGradient>
-                                <linearGradient id="lg2">
-                                    <stop offset="0" stop-color="#b5dbff" stop-opacity="0" />
-                                    <stop offset=".2428" stop-color="#93cef6" stop-opacity=".243" />
-                                    <stop offset=".5763" stop-color="#6abfec" stop-opacity=".576" />
-                                    <stop offset=".8403" stop-color="#51b5e5" stop-opacity=".84" />
-                                    <stop offset="1" stop-color="#48b2e3" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="255" x2="255" xlink:href="#lg2" y1="321.18"
-                                    y2="420.175" />
-                                <linearGradient id="lg3">
-                                    <stop offset="0" stop-color="#b5dbff" stop-opacity="0" />
-                                    <stop offset=".1734" stop-color="#8fc5e9" stop-opacity=".173" />
-                                    <stop offset=".4541" stop-color="#56a4c8" stop-opacity=".454" />
-                                    <stop offset=".6955" stop-color="#2d8db1" stop-opacity=".696" />
-                                    <stop offset=".8853" stop-color="#147ea2" stop-opacity=".885" />
-                                    <stop offset="1" stop-color="#0b799d" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="466.947" x2="334.915" xlink:href="#lg3"
-                                    y1="370.271" y2="306.497" />
-                                <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="111.059" x2="407.341" y1="135.532" y2="431.814">
-                                    <stop offset="0" stop-color="#76e2f8" />
-                                    <stop offset="1" stop-color="#48b2e3" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="448.329" x2="186.181" xlink:href="#lg2"
-                                    y1="477.518" y2="215.37" />
-                                <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="204.315" x2="319.471" xlink:href="#lg1"
-                                    y1="236.363" y2="351.519" />
-                                <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="290.706" x2="54.128" xlink:href="#lg3"
-                                    y1="320.109" y2="206.552" />
-                                <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="381.208" x2="300.245" xlink:href="#lg3"
-                                    y1="366.032" y2="304.522" />
-                                <linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="367.579" x2="232.642" xlink:href="#lg3"
-                                    y1="423.73" y2="288.793" />
-                                <linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="207.684" x2="305.737" y1="263.835" y2="361.888">
-                                    <stop offset="0" stop-color="#b9dd39" />
-                                    <stop offset="1" stop-color="#90cc1c" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="347.465" x2="311.004" y1="370.706" y2="334.244">
-                                    <stop offset="0" stop-color="#6b0" stop-opacity="0" />
-                                    <stop offset="1" stop-color="#6b0" />
-                                </linearGradient>
-                                <linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="246.047" x2="347.603" y1="236.334" y2="337.89">
-                                    <stop offset="0" stop-color="#0b799d" />
-                                    <stop offset="1" stop-color="#07485e" />
-                                </linearGradient>
-                                <g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="m490.588 368.006h-471.176c-10.721 0-19.412-8.691-19.412-19.412v-329.182c0-10.721 8.691-19.412 19.412-19.412h471.176c10.721 0 19.412 8.691 19.412 19.412v329.182c0 10.721-8.691 19.412-19.412 19.412z"
-                                                fill="url(#SVGID_1_)" />
-                                            <path
-                                                d="m510 78.574h-510v-59.162c0-10.721 8.691-19.412 19.412-19.412h471.176c10.721 0 19.412 8.691 19.412 19.412z"
-                                                fill="url(#SVGID_2_)" />
-                                            <g>
-                                                <path
-                                                    d="m40.853 55.025h-10.229c-5.867 0-10.623-4.756-10.623-10.623v-10.23c0-5.867 4.756-10.623 10.623-10.623h10.229c5.867 0 10.623 4.756 10.623 10.623v10.229c0 5.868-4.756 10.624-10.623 10.624z"
-                                                    fill="url(#SVGID_3_)" />
-                                                <path
-                                                    d="m80.984 55.025h-10.23c-5.867 0-10.623-4.756-10.623-10.623v-10.23c0-5.867 4.756-10.623 10.623-10.623h10.229c5.867 0 10.623 4.756 10.623 10.623v10.229c.001 5.868-4.755 10.624-10.622 10.624z"
-                                                    fill="url(#SVGID_4_)" />
-                                                <path
-                                                    d="m121.115 55.025h-10.229c-5.867 0-10.623-4.756-10.623-10.623v-10.23c0-5.867 4.756-10.623 10.623-10.623h10.229c5.867 0 10.623 4.756 10.623 10.623v10.229c0 5.868-4.756 10.624-10.623 10.624z"
-                                                    fill="url(#SVGID_5_)" />
-                                            </g>
-                                            <path
-                                                d="m0 278.495v70.099c0 10.721 8.691 19.412 19.412 19.412h471.176c10.721 0 19.412-8.691 19.412-19.412v-70.099z"
-                                                fill="url(#SVGID_6_)" />
-                                        </g>
-                                        <g fill="#b5dbff">
-                                            <path
-                                                d="m166.113 285.38h-104.397c-7.252 0-13.131-5.879-13.131-13.131v-126.206c0-7.252 5.879-13.131 13.131-13.131h104.397c7.252 0 13.131 5.879 13.131 13.131v126.206c.001 7.252-5.878 13.131-13.131 13.131z" />
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        d="m286.513 170.911h-71.598c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h71.598c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
-                                                    <path
-                                                        d="m451.915 170.911h-125c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h125c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
-                                                </g>
-                                                <g>
-                                                    <path
-                                                        d="m380.317 228.146h71.598c5.247 0 9.5-4.253 9.5-9.5v-19c0-5.247-4.253-9.5-9.5-9.5h-71.598c-5.247 0-9.5 4.253-9.5 9.5v19c0 5.247 4.253 9.5 9.5 9.5z" />
-                                                    <path
-                                                        d="m214.915 228.146h125c5.247 0 9.5-4.253 9.5-9.5v-19c0-5.247-4.253-9.5-9.5-9.5h-125c-5.247 0-9.5 4.253-9.5 9.5v19c0 5.247 4.253 9.5 9.5 9.5z" />
-                                                </g>
-                                                <g>
-                                                    <path
-                                                        d="m286.513 285.38h-71.598c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h71.598c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
-                                                    <path
-                                                        d="m451.915 285.38h-125c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h125c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                    <path
-                                        d="m510 348.594v-81.292l-87.887-87.887c-4.451-6.108-11.656-8.078-19.794-8.078-43.294 0-85.266-14.917-118.85-42.239-16.582-13.491-40.356-13.491-56.938 0-33.584 27.322-75.556 42.239-118.85 42.239-13.519 0-22.477 8.958-22.477 22.477v65.605c0 37.764 7.638 74.623 21.952 108.587h383.432c10.721 0 19.412-8.691 19.412-19.412z"
-                                        fill="url(#SVGID_7_)" />
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="m402.319 169.335c-43.294 0-85.266-14.917-118.85-42.239-16.582-13.49-40.356-13.491-56.938 0-33.584 27.322-75.556 42.239-118.85 42.239-13.519 0-24.479 10.959-24.479 24.479v65.605c0 84.162 37.898 163.85 103.183 216.964l20.15 16.393c28.229 22.966 68.701 22.966 96.93 0l20.15-16.393c65.285-53.114 103.183-132.805 103.183-216.967 0-25.188 0-48.857 0-65.608-.001-13.52-10.96-24.473-24.479-24.473z"
-                                                fill="url(#SVGID_8_)" />
-                                            <path
-                                                d="m255 488.402c-4.72 0-9.335-1.64-12.997-4.619l-38.539-31.354c-28.149-22.902-51.266-52.329-66.851-85.1s-23.823-69.274-23.823-105.563v-52.063c0-6.298 5.149-11.654 11.439-11.987 42.891-2.268 84.356-18.173 117.774-45.361 3.662-2.979 8.277-4.619 12.997-4.619s9.335 1.64 12.996 4.619c33.419 27.189 74.885 43.094 117.777 45.361 6.288.333 11.437 5.687 11.437 11.985v52.061c0 36.289-8.238 72.792-23.823 105.565-15.585 32.772-38.702 62.2-66.851 85.102l-38.539 31.354c-3.662 2.979-8.277 4.619-12.997 4.619z"
-                                                fill="url(#SVGID_9_)" />
-                                            <path
-                                                d="m255 474.028c-4.321 0-8.548-1.502-11.9-4.229l-35.287-28.708c-25.774-20.969-46.94-47.913-61.21-77.919s-21.813-63.429-21.813-96.655v-47.669c0-5.767 4.715-10.67 10.474-10.975 39.272-2.077 77.238-16.639 107.836-41.533 3.353-2.728 7.579-4.23 11.9-4.23 4.322 0 8.548 1.502 11.9 4.229 30.599 24.894 68.566 39.457 107.838 41.534 5.758.304 10.472 5.207 10.472 10.973v47.668c0 33.227-7.543 66.65-21.813 96.656-14.27 30.007-35.436 56.951-61.21 77.92l-35.287 28.709c-3.352 2.727-7.578 4.229-11.9 4.229z"
-                                                fill="url(#SVGID_10_)" />
-                                            <path
-                                                d="m426.797 193.808c0-13.519-10.96-24.473-24.479-24.473-43.294 0-85.266-14.917-118.85-42.239-8.291-6.745-18.38-10.118-28.469-10.118v393.022c17.175 0 34.351-5.742 48.465-17.225l20.15-16.393c65.285-53.114 103.183-132.805 103.183-216.967 0-25.187 0-48.857 0-65.607z"
-                                                fill="url(#SVGID_11_)" />
-                                        </g>
-                                        <path
-                                            d="m383.253 231.347c-7.699-7.698-20.182-6.121-27.881 1.578l-96.058 96.058c-.936.936-3.583 2.711-4.314 2.711s-1.799-.197-2.736-1.134l-36.821-36.821c-7.7-7.699-19.393-7.699-27.092 0s-8.488 18.604-.789 26.303l146.972 146.972c54.815-49.484 87.838-118.676 91.847-192.392z"
-                                            fill="url(#SVGID_12_)" />
-                                        <path
-                                            d="m323.615 476.382c46.598-37.911 79.238-89.363 94.109-146.315l-88.842-88.842c-18.542-19.584-44.784-30.225-73.881-30.225-55.439 0-100.152 44.713-100.152 100.152 0 29.097 10.641 55.338 30.225 73.88l106.777 106.777c3.262 3.262 8.464 3.529 12.043.617z"
-                                            fill="url(#SVGID_13_)" />
-                                        <circle cx="255" cy="311.151" fill="url(#SVGID_14_)" r="101.729" />
-                                        <path
-                                            d="m337.149 251.148-77.835 77.835c-.936.936-3.583 2.711-4.314 2.711s-1.799-.197-2.736-1.134l-36.821-36.821c-7.7-7.699-19.393-7.699-27.092 0s-8.488 18.604-.789 26.303l90.264 90.264c45.192-10.361 78.903-50.821 78.903-99.156 0-22.44-7.272-43.18-19.58-60.002z"
-                                            fill="url(#SVGID_15_)" />
-                                        <path
-                                            d="m255 369.546c-11.566 0-22.439-4.504-30.617-12.683l-36.821-36.82c-7.699-7.699-7.699-20.182 0-27.881s20.182-7.699 27.881 0l36.821 36.821c.937.937 2.005 1.134 2.736 1.134s1.799-.197 2.735-1.133l97.637-97.636c7.699-7.699 20.182-7.698 27.881 0 7.699 7.699 7.699 20.182 0 27.881l-97.636 97.636c-8.178 8.177-19.051 12.681-30.617 12.681z"
-                                            fill="url(#SVGID_16_)" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="whytext">
-                            <h5 class="card-title darkblue">Crypto Settlements</h5>
-                            <p class="content">We provide Crypto settlements at the end of every business day if the
-                                merchant wishes so</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-6 col-sm-6 col-12">
-                    <div class="table-content">
-                        <div class="whyimg">
-                            <svg id="Layer_3" enable-background="new 0 0 512 512" height="100" viewBox="0 0 512 512" width="100"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="m3.806 80.654c0-44.939 36.754-81.294 81.842-80.645 43.675.628 79.188 36.446 79.464 80.124.155 24.461-10.583 46.414-27.645 61.305-1.801 1.571-1.541 4.439.516 5.656l15.197 8.992c2.457 1.454 1.426 5.22-1.429 5.22l-68.818-.017c-43.839-.815-79.127-36.602-79.127-80.635z"
-                                                fill="#7acaa6" />
-                                        </g>
-                                    </g>
-                                    <path
-                                        d="m153.18 156.086-15.198-8.992c-2.046-1.21-2.33-4.074-.539-5.636 17.257-15.049 28.051-37.322 27.66-62.108-.677-42.873-35.377-78.066-78.238-79.315-6.078-.177-12.01.32-17.727 1.419 37.047 7.102 65.281 39.757 65.527 78.678.119 18.849-6.23 36.209-16.956 49.996-6.477 8.325-4.372 20.397 4.706 25.769l.318.188c2.43 1.438 1.444 5.132-1.339 5.212l30.356.007c2.855.002 3.887-3.765 1.43-5.218z"
-                                        fill="#57be92" />
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="m396.792 292.755h-182.966c-45.698 0-70.706-53.256-41.519-88.42l1.623-1.956c12.858-15.491 19.896-34.99 19.896-55.122v-35.283c.001-61.842 50.133-111.974 111.975-111.974 61.842 0 111.974 50.132 111.974 111.974v36.474c0 20.343 7.186 40.032 20.29 55.593 29.551 35.092 4.605 88.714-41.273 88.714z"
-                                                fill="#c59191" />
-                                            <path
-                                                d="m492.97 383.43v120.96h-375.32v-120.05c0-27.18 16.29-51.71 41.33-62.25l60.59-26.34 20.4-8.87c15.48-6.73 25.49-22 25.49-38.88v-7.83h79.69v7.43c0 16.95 10.11 32.28 25.7 38.96l81.95 35.13c24.42 10.82 40.17 35.02 40.17 61.74z"
-                                                fill="#fff" />
-                                            <path
-                                                d="m219.565 324.59c20.679 6.179 51.116 12.769 88.217 12.12 34.811-.608 63.387-7.377 83.271-13.728l9.88-23.527-30.086-12.895c-15.586-6.681-25.692-22.006-25.692-38.964v-7.424h-79.69v7.828c0 16.878-10.012 32.147-25.489 38.877l-24.368 10.595z"
-                                                fill="#ffcebf" />
-                                            <g fill="#8795de">
-                                                <path
-                                                    d="m452.796 321.685-61.732-26.459-.011.001v209.161h101.918v-120.957c0-26.717-15.749-50.922-40.175-61.746z" />
-                                                <path d="m219.57 295.75v208.64h-101.92v-120.05c0-27.18 16.29-51.71 41.33-62.25z" />
-                                            </g>
-                                        </g>
-                                        <g>
-                                            <path
-                                                d="m332.933 283.912c9.168 0 17.904-1.841 25.867-5.163-8.542-7.885-13.646-19.105-13.646-31.152v-7.424h-79.69v7.827c0 6.097-1.313 11.982-3.712 17.332 12.067 11.503 28.392 18.579 46.379 18.579h24.802z"
-                                                fill="#ffb09e" />
-                                            <path
-                                                d="m384.957 120.293v65.925c0 37.14-30.108 67.247-67.247 67.247h-24.801c-37.14 0-67.247-30.108-67.247-67.247v-65.925c0-24.161 19.586-43.748 43.748-43.748h71.8c24.161.001 43.747 19.587 43.747 43.748z"
-                                                fill="#ffcebf" />
-                                            <path
-                                                d="m384.957 154.593c-.03.091-.067.179-.094.272-2.431 8.395-8.811 24.253-24.229 36.142-7.179 5.537-15.368 9.537-24.338 11.891-4.066 1.067-6.498 5.228-5.431 9.294.898 3.419 3.981 5.682 7.358 5.682.639 0 1.289-.081 1.937-.251 10.952-2.874 20.968-7.773 29.771-14.56 6.079-4.688 10.999-9.866 14.982-15.072.015-.59.045-1.177.045-1.771v-31.627z"
-                                                fill="#7a6d79" />
-                                            <path
-                                                d="m327.949 223.939h-17.837c-8.119 0-14.701-6.582-14.701-14.701 0-8.119 6.582-14.701 14.701-14.701h17.837c8.119 0 14.701 6.582 14.701 14.701-.001 8.12-6.582 14.701-14.701 14.701z"
-                                                fill="#685e68" />
-                                            <g>
-                                                <path
-                                                    d="m321.201 59.097c1.708-21.54 22.33-35.835 42.067-43.239 32.649 19.563 54.507 55.284 54.507 96.115v7.698c-1.805.379-3.601.711-5.377.976-10.873 1.624-20.132.921-26.458 0-40.763-5.43-66.802-35.535-64.739-61.55z"
-                                                    fill="#b98080" />
-                                                <path
-                                                    d="m305.801 0c25.288 0 48.616 8.386 67.361 22.525-9.351 16.271-30.823 48.441-71.086 72.257-29.89 17.681-58.074 23.622-75.43 25.865h-32.818v-8.674c-.001-61.841 50.131-111.973 111.973-111.973z"
-                                                    fill="#c59191" />
-                                            </g>
-                                        </g>
-                                    </g>
-                                    <path
-                                        d="m430.971 504.388h-243.654l-13.439-126.775c-.953-8.992 6.096-16.828 15.138-16.828h240.257c9.042 0 16.091 7.836 15.138 16.828z"
-                                        fill="#efedef" />
-                                    <path
-                                        d="m429.272 360.785h-30.446c9.042 0 16.091 7.836 15.138 16.828l-13.439 126.776h30.446l13.439-126.776c.954-8.992-6.095-16.828-15.138-16.828z"
-                                        fill="#e5e1e5" />
-                                    <g>
-                                        <path
-                                            d="m504.5 512h-497c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h497c4.143 0 7.5 3.358 7.5 7.5s-3.357 7.5-7.5 7.5z"
-                                            fill="#c9bfc8" />
-                                    </g>
-                                    <circle cx="309.144" cy="432.587" fill="#c9bfc8" r="21.312" />
-                                    <g fill="#fff">
-                                        <circle cx="54.014" cy="80.653" r="7.611" />
-                                        <circle cx="84.46" cy="80.653" r="7.611" />
-                                        <circle cx="114.906" cy="80.653" r="7.611" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="whytext">
-                            <h5 class="card-title darkblue">Hedging Services</h5>
-                            <p class="content">A merchant has the option to request for hedging services whereby fiat
-                                settlements are made at the exact values paid to the merchant. This is so you do not
-                                have to worry about the volatility of the bitcoin market</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-12">
-                    <div class="table-content">
-                        <div class="whyimg">
-                            <svg id="Layer_4" enable-background="new 0 0 512 512" height="100" viewBox="0 0 512 512" width="100"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="m274.106 135.128v63.695h26.187c9.485 0 17.175-7.689 17.175-17.175v-29.346c0-9.485-7.689-17.175-17.175-17.175h-26.187z"
-                                                fill="#9bc4f9" />
-                                        </g>
-                                        <g>
-                                            <path
-                                                d="m124.002 135.128v63.695h-26.187c-9.485 0-17.175-7.689-17.175-17.175v-29.346c0-9.485 7.689-17.175 17.175-17.175h26.187z"
-                                                fill="#9bc4f9" />
-                                        </g>
-                                    </g>
-                                    <g>
-                                        <g>
-                                            <g>
-                                                <g>
-                                                    <path
-                                                        d="m425.765.322h-66.184c-12.41 0-22.47 10.06-22.47 22.47v64.992c0 12.41 10.06 22.47 22.47 22.47 7.335 0 8.416 1.371 10.769 3.606h41.465c2.407-2.285 3.777-3.606 11.188-3.606h3.213v-.005c12.192-.251 21.999-10.212 21.999-22.464v-64.994c0-12.403-10.049-22.458-22.45-22.469z"
-                                                        fill="#b3e59f" />
-                                                    <path
-                                                        d="m489.53.322h-67.305c12.41 0 22.47 10.06 22.47 22.47v64.992c0 12.252-9.806 22.214-21.999 22.464v.009c.102-.002.204-.004.307-.004h66.528c12.41 0 22.47-10.06 22.47-22.47v-64.992c-.001-12.409-10.061-22.469-22.471-22.469z"
-                                                        fill="#95d6a4" />
-                                                    <g>
-                                                        <g>
-                                                            <g>
-                                                                <path
-                                                                    d="m477.406 46.103h-67.417c-4.267 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h67.417c4.267 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
-                                                                    fill="#f2f9ff" />
-                                                            </g>
-                                                            <g>
-                                                                <path
-                                                                    d="m379.923 46.103h-8.217c-4.267 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h8.217c4.267 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
-                                                                    fill="#f2f9ff" />
-                                                            </g>
-                                                        </g>
-                                                        <g>
-                                                            <g>
-                                                                <path
-                                                                    d="m477.406 82.398h-105.7c-4.267 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h105.7c4.267 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
-                                                                    fill="#f2f9ff" />
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <g>
-                                                    <g>
-                                                        <g>
-                                                            <path
-                                                                d="m260.309 314.703c-10.592-2.038-18.247-11.307-18.247-22.094v-61.796h-86.016v61.796c0 11.02-7.951 20.117-18.247 22.094l21.25 28.519h80.011c-.001 0 22.891-28.203 21.249-28.519z"
-                                                                fill="#ffddce" />
-                                                            <path
-                                                                d="m391.926 486.499v-36.722c0-63.704-45.211-118.446-107.767-130.485-6.125-1.179-170.209 0-170.209 0-62.557 12.04-107.768 66.781-107.768 130.485v36.722z"
-                                                                fill="#ffd064" />
-                                                            <path
-                                                                d="m277.774 312.374h-220.281c-13.604 0-24.419 11.419-23.682 25.002l8.324 153.363h250.997l8.324-153.363c.737-13.584-10.078-25.002-23.682-25.002z"
-                                                                fill="#eaf2ff" />
-                                                            <path
-                                                                d="m340.615 312.374h-67.305c13.604 0 24.419 11.419 23.682 25.002l-8.324 153.363h67.305l8.324-153.363c.737-13.584-10.078-25.002-23.682-25.002z"
-                                                                fill="#dbe8f9" />
-                                                            <path
-                                                                d="m333.022 495.065v-12.682l-2.704-3.931h-313.704c-9.176-.001-16.614 7.437-16.614 16.613 0 9.175 7.438 16.613 16.614 16.613h299.804c9.171-.005 16.604-7.441 16.604-16.613z"
-                                                                fill="#9bc4f9" />
-                                                            <path
-                                                                d="m381.494 478.451h-51.177v16.614c0 9.175-7.438 16.614-16.614 16.614h67.79c9.175 0 16.614-7.438 16.614-16.614.001-9.176-7.437-16.614-16.613-16.614z"
-                                                                fill="#7fb2f9" />
-                                                        </g>
-                                                    </g>
-                                                    <path
-                                                        d="m219.784 478.451c0-13.615 5.101-26.704 14.21-36.823.068-.075.136-.151.204-.228 7.449-8.334 11.978-19.333 11.978-31.39 0-17.572-9.619-32.897-23.878-40.999-2.705-1.537-6.066.396-6.066 3.508v35.057c0 5.876-4.764 10.64-10.64 10.64h-13.08c-5.876 0-10.64-4.764-10.64-10.64v-35.057c0-3.111-3.361-5.045-6.066-3.508-14.259 8.102-23.878 23.427-23.878 40.999 0 12.058 4.529 23.057 11.978 31.39l.204.228c9.109 10.119 14.21 23.208 14.21 36.823z"
-                                                        fill="#bcd6f9" />
-                                                </g>
-                                            </g>
-                                            <g>
-                                                <g>
-                                                    <g>
-                                                        <g>
-                                                            <path
-                                                                d="m211.403 258.193c17.134-15.061 26.561-37.17 26.952-60.1l-.28-110.734c-.058-13.669-3.222-26.652-9.306-38.33-9.531-3.546-19.772-5.477-30.257-5.551-44.206.688-84.16 34.468-83.957 83.18l.068 16.33.251 54.833c.569 22.411 9.964 43.945 26.836 58.524 9.976 8.62 22.909 16.419 39.031 20.023 12.295-4.312 22.471-10.975 30.662-18.175z"
-                                                                fill="#ffddce" />
-                                                            <path
-                                                                d="m283.16 125.938c-.161-38.694-25.662-67.888-58.495-78.298 6.996 11.834 11.111 25.763 11.175 41.212l.274 108.249c-.382 22.415-9.597 44.028-26.347 58.751-8.948 7.865-20.319 15.077-34.298 19.156 7.292 2.128 15.291 3.404 24.024 3.465 25.129-.391 44.11-10.768 57.595-22.621 16.75-14.723 25.965-36.336 26.347-58.751z"
-                                                                fill="#ffcbbe" />
-                                                            <path
-                                                                d="m196.128 98.44h5.853c7.944.034 15.782-1.44 23.346-3.87 4.113-1.321 8.412-2.021 12.761-2.053l-.013-5.158c-.065-15.181-3.959-29.517-11.432-42.158.005.002.01.003.015.005-2.903-4.91-6.293-9.465-10.091-13.627l-6.747-2.278h-49.195c-36.415 0-65.936 29.52-65.936 65.936v43.574c0 6.4 4.05 12.1 10.095 14.204l16.242 5.655c5.677 1.977 11.605-2.244 11.596-8.255l-.036-30.726c-.062-14.943 11.854-27.108 26.617-27.171l.322-.002c4.518-.019 8.988.683 13.257 2.054 7.563 2.43 15.401 3.904 23.346 3.87z"
-                                                                fill="#756e78" />
-                                                            <path
-                                                                d="m277.71 63.693h-.866c-4.795 0-8.683-3.888-8.683-8.683 0-14.199-11.51-25.709-25.709-25.709h-32.632c15.737 14.523 25.918 35.149 26.019 59.55l.009 3.749c.909-.055 1.82-.088 2.734-.084l.321.002c14.763.064 26.679 12.228 26.617 27.171l-.03 30.729c-.008 6.01 5.92 10.229 11.596 8.253l16.236-5.655c6.044-2.105 10.094-7.804 10.094-14.204v-49.41c.002-14.199-11.508-25.709-25.706-25.709z"
-                                                                fill="#665e66" />
-                                                            <path
-                                                                d="m302.015 198.737v11.268c0 8.777-7.14 15.917-15.917 15.917h-47.568c-4.267 0-7.726 3.459-7.726 7.726s3.459 7.726 7.726 7.726h47.568c17.297 0 31.37-14.072 31.37-31.37v-28.357c-.001 8.905-6.777 16.227-15.453 17.09z"
-                                                                fill="#dbe8f9" />
-                                                            <path
-                                                                d="m257.363 245.777h-19.391c-7.398 0-13.395-5.997-13.395-13.395 0-7.398 5.997-13.395 13.395-13.395h19.391c7.398 0 13.395 5.997 13.395 13.395 0 7.398-5.997 13.395-13.395 13.395z"
-                                                                fill="#db636e" />
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                    <g>
-                                        <path
-                                            d="m422.535 110.251c-.103.001-.206.002-.31.002h-62.644c7.247 0 13.122 5.875 13.122 13.123v40.192c0 5.103 6.72 6.963 9.345 2.587l29.7-49.528c2.291-3.82 6.356-6.208 10.786-6.365v-.011z"
-                                            fill="#95d6a4" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="whytext">
-                            <h5 class="card-title darkblue">Efficient support</h5>
-                            <p class="content">We are always willing to to answer your questions and guide you through
-                                the use of our services. We are flexible and can tweak our services to suit your
-                                business needs</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    
-    <section class="how-it-works" id="howitworks">
-        <div class="container">
-            <h2 class="title-f text-center">How to get Payzum Payment ?</h2>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card">
-                        <div class="extraimg">
-                            <img src="landing/images/payment/circle1.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img src="landing/images/pen.svg" />
-                            <h5 class="card-title darkblue">Free Register</h5>
-                            <p class="content">Creating your account is simple, once you click on the "register" button
-                                at the top right corner of the page, you would see a simple registration form, once that
-                                is completed submit id for verification and enable 2FA to use all our features
-                                effectively.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card">
-                        <div class="extraimg">
-                            <img src="landing/images/payment/circle2.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img src="landing/images/list-check.svg" />
-                            <h5 class="card-title darkblue">KYC Verify</h5>
-                            <p class="content">KYC check is the mandatory process of identifying and verifying the
-                                identity of the client when opening an account and periodically over time.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card">
-                        <div class="extraimg">
-                            <img src="landing/images/payment/circle3.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img src="landing/images/wallet2.svg" />
-                            <h5 class="card-title darkblue">Wallet & Withdrawals</h5>
-                            <p class="content">The wallets are automatically created and can be used to store
-                                cryptocurrency and withdraw at will. For those using our hedging service, we would
-                                always pay fiat based on current values at payment time.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card">
-                        <div class="extraimg">
-                            <img src="landing/images/payment/circle4.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img src="landing/images/bx-user.svg" />
-                            <h5 class="card-title darkblue">Merchant Use</h5>
-                            <p class="content">Click on the ''merchant tools'' to use features such as our simple
-                                buttons to place on your site for payment and our API and IPN features. More details are
-                                given in that section</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="paymentbanner">
-        <div class="container">
-          <h2 class="title-f text-center">Merchants Accepting Payment</h2>
-          <div class="paymentboxfull">
-    
-            <div class="payment-logos__wrap">
-              <div class="payment-logos__icon payment-logos__icon--visa"></div>
-              <div class="payment-logos__icon payment-logos__icon--mastercard"></div>
-              <div class="payment-logos__icon payment-logos__icon--ym"></div>
-              <div class="payment-logos__icon payment-logos__icon--mir hidden show-ru"></div>
-              <div class="payment-logos__icon payment-logos__icon--sber hidden show-ru"></div>
-              <div class="payment-logos__icon payment-logos__icon--wire"></div>
-              <div class="payment-logos__icon payment-logos__icon--faster-payments"></div>
-              <div class="payment-logos__icon payment-logos__icon--sepa"></div>
-              <div class="payment-logos__icon payment-logos__icon--pci"></div>
-              <div class="payment-logos__icon payment-logos__icon--btc"></div>
-              <div class="payment-logos__icon payment-logos__icon--eth"></div>
+  <!-- menui 1 -->
+  <nav class="navbar navbar-light sticky-top" style="background-color: #e3f2fd00;" >
+    <div class="cg-container large" style="width: 100%; background-color: rgb(255, 255, 255);">
+      <div class="cg-widget">
+        <div class="cg-marquee" style="background-color: rgb(255, 255, 255);">
+          <span class="cg-marquee-content-1">
+            <div class="cg-flex cg-flex-row"><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+                    class="cg-mr-2"><span><span class="cg-bold">Bitcoin</span> (BTC)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      43.985&nbsp;US$
+                    </span><span>(-0.93%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880"
+                    class="cg-mr-2"><span><span class="cg-bold">Ethereum</span> (ETH)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      3124,40&nbsp;US$
+                    </span><span>(-3.61%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/738/large/eos-eos-logo.png?1547034481"
+                    class="cg-mr-2"><span><span class="cg-bold">EOS</span> (EOS)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      2,60&nbsp;US$
+                    </span><span>(-2.93%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731"
+                    class="cg-mr-2"><span><span class="cg-bold">XRP</span> (XRP)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      0,842898&nbsp;US$
+                    </span><span>(-5.78%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/2/large/litecoin.png?1547033580"
+                    class="cg-mr-2"><span><span class="cg-bold">Litecoin</span> (LTC)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      136,84&nbsp;US$
+                    </span><span>(-1.72%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a>
+              <div class="cg-flex cg-items-center"><a class="cg-bold cg-sm cg-px-3">Con tecnología de <a
+                    class="cg-primary-color-dark cg-no-underline"
+                    href="#"
+                    target="_blank">CoinGecko</a></a></div>
             </div>
-    
+          </span>
+          <span class="cg-marquee-content-2">
+            <div class="cg-flex cg-flex-row"><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+                    class="cg-mr-2"><span><span class="cg-bold">Bitcoin</span> (BTC)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      43.985&nbsp;US$
+                    </span><span>(-0.93%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880"
+                    class="cg-mr-2"><span><span class="cg-bold">Ethereum</span> (ETH)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      3124,40&nbsp;US$
+                    </span><span>(-3.61%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/738/large/eos-eos-logo.png?1547034481"
+                    class="cg-mr-2"><span><span class="cg-bold">EOS</span> (EOS)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      2,60&nbsp;US$
+                    </span><span>(-2.93%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731"
+                    class="cg-mr-2"><span><span class="cg-bold">XRP</span> (XRP)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      0,842898&nbsp;US$
+                    </span><span>(-5.78%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a><a
+                href="#"
+                target="_blank" class="cg-py-2 cg-px-3 cg-flex cg-coin-row cg-sm" style="color: rgb(76, 76, 76);">
+                <div class="cg-flex cg-items-center"><img
+                    src="https://assets.coingecko.com/coins/images/2/large/litecoin.png?1547033580"
+                    class="cg-mr-2"><span><span class="cg-bold">Litecoin</span> (LTC)
+                  </span></div>
+                <div class="cg-ml-2 cg-flex cg-justify-end cg-items-center cg-red-color-dark">
+                  <div><span class="cg-bold">
+                      136,84&nbsp;US$
+                    </span><span>(-1.72%)</span></div>
+                  <div class="cg-ml-2 cg-arrow-down"></div>
+                </div>
+              </a>
+              <div class="cg-flex cg-items-center"><a class="cg-bold cg-sm cg-px-3">Con tecnología de <a
+                    class="cg-primary-color-dark cg-no-underline"
+                    href="#"
+                    target="_blank">CoinGecko</a></a></div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- fin menui 1 -->
+
+  <!-- menui 2 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary top-menu sticky-top-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="animate__animated animate__zoomIn"
+          src="landing/images/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+        <!-- navbarNav -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item"><a class="nav-link animate__animated animate__bounce scroll" href="#top">Home</a></li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__backInDown scroll" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__backInDown scroll" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__backInDown scroll" href="#howitworks">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link animate__animated animate__backInDown scroll" href="#testimonials">Testimonial</a></li>
+          <li><a href="#login" class="btn btn-rounded animate__animated animate__bounceIn">Sign In</a></li>
+          <li><a href="#register" class="btn btn-primary btn-rounded t-blue animate__animated animate__bounceIn">Sign Up </a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  
+  <!-- fin menui 2 -->
+
+  <section class="banner-bg" id="top">
+
+    <!-- canvas -->
+    <div class="bg-animado-canvas">
+      <div id="tsparticles"></div>
+    </div>
+    <!-- canvas -->
+
+    <div class="container banner-container">
+
+      <!-- Contenido banner -->
+      <div class="table-content" >
+        <div class="col-md-6">
+          <h1 class="title-f h1 darkblue animate__animated animate__slideInLeft">Grow your business digitally and accept
+            payment</h1>
+          <div class="bannerbtn">
+            <a href="#register" class="btn btn--green  animate__animated  animate__slideInUp">Get
+              Started</a>
           </div>
         </div>
-    </section>
+        <div class="col-md-6 text-center">
+          <div class="container-card d-inline-block position-relative animate__animated animate__slideInRight">
 
-    <section class="notification">
+            <div >
+              <div class="perspective">
+                <div class="card_" id="interactive">
+                  <img src="landing/images/bg.png" class="bg-img">
+                  <img src="landing/images/rectangle.png" alt="card" class="img-fluid">
+                  <img src="landing/images/man.png" class="man">
+                  <img src="landing/images/woman.png" class="woman">
+                  <img src="landing/images/char1.gif" class="char">
+                  <img src="landing/images/coin-gif.gif" class="coin-b ">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Fin Contenido banner -->
+
+    </div>
+    <!-- <div class="degrade"></div> -->
+    </div>
+  </section>
+
+  <section class="aboutusbg" id="about">
+    <div class="container">
+      <div class="row table-content">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+
+          <img src="landing/images/aboutus.png">
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 abouticon">
+          <h2 class="title-f pb-2">About Payzum</h2>
+          <p class="content"> </p>
+          <p>Payzum was founded in 2020 as a Cryptocurrency&nbsp;payment processor and has since become a trusted
+            provider of payment services supporting&nbsp;Bitcoin, Ethereum, Litecoin, Bitcoin Cash and Tethe... </p>
+          <div class="bannerbtn">
+            <a href="#about" class="btn btn-primary bluebtn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="WhyChoose feature-section" id="features">
+    <div class="container">
+      <h2 class="title-f text-center">Why Use Payzum Payment?</h2>
+      <div class="row mt-5">
+        <div class="col-md-6 col-sm-6 col-12">
+          <div class="table-content">
+            <div class="whyimg">
+              <svg id="Layer_3" enable-background="new 0 0 64 64" height="100" viewBox="0 0 64 64" width="100"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="m2 25v33c0 2.209 1.791 4 4 4h52c2.209 0 4-1.791 4-4v-36c0-1.105-.895-2-2-2h-13"
+                    fill="#4c506e" />
+                  <path
+                    d="m62 32c0-1.105-.895-2-2-2h-53c-2.761 0-5-2.239-5-5 0-2.761 2.239-5 5-5h53c1.105 0 2 .895 2 2z"
+                    fill="#363a4f" />
+                  <path d="m7 23c-1.105 0-2 .895-2 2v4.578c.613.268 1.288.422 2 .422h53v-7z" fill="#2c2f41" />
+                  <path
+                    d="m51.5 25h-41c-.828 0-1.5-.672-1.5-1.5 0-.828.672-1.5 1.5-1.5h41c.828 0 1.5.672 1.5 1.5 0 .828-.672 1.5-1.5 1.5z"
+                    fill="#4c506e" />
+                  <circle cx="32" cy="17" fill="#f6b940" r="15" />
+                  <path
+                    d="m32 2c-8.284 0-15 6.716-15 15 0 3.382 1.133 6.491 3.02 9h14.98c2.209 0 4-1.791 4-4v-18.262c-2.091-1.106-4.47-1.738-7-1.738z"
+                    fill="#fad85d" />
+                  <path d="m22 17h-2c0 6.617 5.383 12 12 12v-2c-5.514 0-10-4.486-10-10z" fill="#fce797" />
+                  <path d="m32 5v2c5.514 0 10 4.486 10 10h2c0-6.617-5.383-12-12-12z" fill="#fce797" />
+                  <path
+                    d="m39 14c0-2.206-1.794-4-4-4v-2h-2v2h-1v-2h-2v2h-4v2h2v10h-2v2h4v2h2v-2h1v2h2v-2c2.206 0 4-1.794 4-4 0-1.2-.542-2.266-1.382-3 .84-.734 1.382-1.8 1.382-3zm-2 6c0 1.103-.897 2-2 2h-5v-4h5c1.103 0 2 .897 2 2zm-7-4v-4h5c1.103 0 2 .897 2 2s-.897 2-2 2z"
+                    fill="#fff" />
+                  <path d="m9 30v22c0 2.209 1.791 4 4 4h49v-24c0-1.105-.895-2-2-2h-13" fill="#787faa" />
+                  <path d="m62 40h-9c-2.761 0-5 2.239-5 5 0 2.761 2.239 5 5 5h9" fill="#4c506e" />
+                  <circle cx="53" cy="45" fill="#363a4f" r="2" />
+                  <path
+                    d="m42.5 35h-28c-.828 0-1.5-.672-1.5-1.5 0-.828.672-1.5 1.5-1.5h28c.828 0 1.5.672 1.5 1.5 0 .828-.672 1.5-1.5 1.5z"
+                    fill="#9da1bf" />
+                  <path
+                    d="m56.5 54h-28c-.828 0-1.5-.672-1.5-1.5 0-.828.672-1.5 1.5-1.5h28c.828 0 1.5.672 1.5 1.5 0 .828-.672 1.5-1.5 1.5z"
+                    fill="#9da1bf" />
+                  <path
+                    d="m30 26h2v-2h1v2h2v-2c2.206 0 4-1.794 4-4 0-1.2-.542-2.266-1.382-3 .84-.734 1.382-1.8 1.382-3 0-2.206-1.794-4-4-4v-2h-2v2h-1v-2h-2v2h-4v2h2v10h-2v2h4zm5-14c1.103 0 2 .897 2 2s-.897 2-2 2h-5v-4zm-5 6h5c1.103 0 2 .897 2 2s-.897 2-2 2h-5z" />
+                  <path d="m22 17h-2c0 6.617 5.383 12 12 12v-2c-5.514 0-10-4.486-10-10z" />
+                  <path d="m42 17h2c0-6.617-5.383-12-12-12v2c5.514 0 10 4.486 10 10z" />
+                  <path
+                    d="m60 19h-12.13c.084-.659.13-1.327.13-2 0-8.822-7.178-16-16-16s-16 7.178-16 16c0 .673.046 1.341.13 2h-9.13c-3.309 0-6 2.691-6 6v33c0 2.757 2.243 5 5 5h52c2.757 0 5-2.243 5-5v-36c0-1.654-1.346-3-3-3zm0 2c.551 0 1 .449 1 1v7.184c-.314-.112-.648-.184-1-.184h-17.421c2.396-2.12 4.103-4.916 4.904-8zm-28-18c7.72 0 14 6.28 14 14 0 4.903-2.6 9.474-6.797 12h-7.203-7.203c-4.197-2.526-6.797-7.097-6.797-12 0-7.72 6.28-14 14-14zm-25 18h9.517c.801 3.084 2.508 5.88 4.904 8h-14.421c-2.206 0-4-1.794-4-4s1.794-4 4-4zm54 28h-8c-2.206 0-4-1.794-4-4s1.794-4 4-4h8zm0-10h-8c-3.309 0-6 2.691-6 6s2.691 6 6 6h8v7c0 1.654-1.346 3-3 3h-52c-1.654 0-3-1.346-3-3v-28.54c1.063.954 2.462 1.54 4 1.54h53c.551 0 1 .449 1 1z" />
+                  <path
+                    d="m50 45c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3-3 1.346-3 3zm4 0c0 .551-.449 1-1 1s-1-.449-1-1 .449-1 1-1 1 .449 1 1z" />
+                </g>
+              </svg>
+            </div>
+            <div class="whytext">
+              <h5 class="card-title darkblue">2Factor Authentication</h5>
+              <p class="content">Security will always be a top priority in every decision we make, We provide access to
+                a second factor authentication to enable you fully secure your accounts. We also provide other security
+                features that make our service highly secure</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-12">
+          <div class="table-content">
+            <div class="whyimg">
+
+
+              <svg id="Capa_1" enable-background="new 0 0 510 510" height="100" viewBox="0 0 510 510" width="100"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <linearGradient id="lg1">
+                  <stop offset="0" stop-color="#edf5ff" />
+                  <stop offset="1" stop-color="#d5e8fe" />
+                </linearGradient>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="117.907" x2="404.713" xlink:href="#lg1"
+                  y1="46.91" y2="333.716" />
+                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="251.442" x2="259.282" y1="-5.718"
+                  y2="114.127">
+                  <stop offset="0" stop-color="#b5dbff" />
+                  <stop offset="1" stop-color="#48b2e3" />
+                </linearGradient>
+                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="32.241" x2="46.622" y1="36.623"
+                  y2="47.579">
+                  <stop offset="0" stop-color="#ff637b" />
+                  <stop offset="1" stop-color="#e63950" />
+                </linearGradient>
+                <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="72.372" x2="86.753" y1="36.623"
+                  y2="47.579">
+                  <stop offset="0" stop-color="#ffda2d" />
+                  <stop offset="1" stop-color="#fdbf00" />
+                </linearGradient>
+                <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="108.358" x2="142.441" y1="31.645"
+                  y2="65.728">
+                  <stop offset="0" stop-color="#b9dd39" />
+                  <stop offset="1" stop-color="#0b799d" />
+                </linearGradient>
+                <linearGradient id="lg2">
+                  <stop offset="0" stop-color="#b5dbff" stop-opacity="0" />
+                  <stop offset=".2428" stop-color="#93cef6" stop-opacity=".243" />
+                  <stop offset=".5763" stop-color="#6abfec" stop-opacity=".576" />
+                  <stop offset=".8403" stop-color="#51b5e5" stop-opacity=".84" />
+                  <stop offset="1" stop-color="#48b2e3" />
+                </linearGradient>
+                <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="255" x2="255" xlink:href="#lg2"
+                  y1="321.18" y2="420.175" />
+                <linearGradient id="lg3">
+                  <stop offset="0" stop-color="#b5dbff" stop-opacity="0" />
+                  <stop offset=".1734" stop-color="#8fc5e9" stop-opacity=".173" />
+                  <stop offset=".4541" stop-color="#56a4c8" stop-opacity=".454" />
+                  <stop offset=".6955" stop-color="#2d8db1" stop-opacity=".696" />
+                  <stop offset=".8853" stop-color="#147ea2" stop-opacity=".885" />
+                  <stop offset="1" stop-color="#0b799d" />
+                </linearGradient>
+                <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="466.947" x2="334.915" xlink:href="#lg3"
+                  y1="370.271" y2="306.497" />
+                <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="111.059" x2="407.341" y1="135.532"
+                  y2="431.814">
+                  <stop offset="0" stop-color="#76e2f8" />
+                  <stop offset="1" stop-color="#48b2e3" />
+                </linearGradient>
+                <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="448.329" x2="186.181" xlink:href="#lg2"
+                  y1="477.518" y2="215.37" />
+                <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="204.315" x2="319.471"
+                  xlink:href="#lg1" y1="236.363" y2="351.519" />
+                <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="290.706" x2="54.128" xlink:href="#lg3"
+                  y1="320.109" y2="206.552" />
+                <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="381.208" x2="300.245"
+                  xlink:href="#lg3" y1="366.032" y2="304.522" />
+                <linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="367.579" x2="232.642"
+                  xlink:href="#lg3" y1="423.73" y2="288.793" />
+                <linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="207.684" x2="305.737" y1="263.835"
+                  y2="361.888">
+                  <stop offset="0" stop-color="#b9dd39" />
+                  <stop offset="1" stop-color="#90cc1c" />
+                </linearGradient>
+                <linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="347.465" x2="311.004" y1="370.706"
+                  y2="334.244">
+                  <stop offset="0" stop-color="#6b0" stop-opacity="0" />
+                  <stop offset="1" stop-color="#6b0" />
+                </linearGradient>
+                <linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="246.047" x2="347.603" y1="236.334"
+                  y2="337.89">
+                  <stop offset="0" stop-color="#0b799d" />
+                  <stop offset="1" stop-color="#07485e" />
+                </linearGradient>
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        d="m490.588 368.006h-471.176c-10.721 0-19.412-8.691-19.412-19.412v-329.182c0-10.721 8.691-19.412 19.412-19.412h471.176c10.721 0 19.412 8.691 19.412 19.412v329.182c0 10.721-8.691 19.412-19.412 19.412z"
+                        fill="url(#SVGID_1_)" />
+                      <path
+                        d="m510 78.574h-510v-59.162c0-10.721 8.691-19.412 19.412-19.412h471.176c10.721 0 19.412 8.691 19.412 19.412z"
+                        fill="url(#SVGID_2_)" />
+                      <g>
+                        <path
+                          d="m40.853 55.025h-10.229c-5.867 0-10.623-4.756-10.623-10.623v-10.23c0-5.867 4.756-10.623 10.623-10.623h10.229c5.867 0 10.623 4.756 10.623 10.623v10.229c0 5.868-4.756 10.624-10.623 10.624z"
+                          fill="url(#SVGID_3_)" />
+                        <path
+                          d="m80.984 55.025h-10.23c-5.867 0-10.623-4.756-10.623-10.623v-10.23c0-5.867 4.756-10.623 10.623-10.623h10.229c5.867 0 10.623 4.756 10.623 10.623v10.229c.001 5.868-4.755 10.624-10.622 10.624z"
+                          fill="url(#SVGID_4_)" />
+                        <path
+                          d="m121.115 55.025h-10.229c-5.867 0-10.623-4.756-10.623-10.623v-10.23c0-5.867 4.756-10.623 10.623-10.623h10.229c5.867 0 10.623 4.756 10.623 10.623v10.229c0 5.868-4.756 10.624-10.623 10.624z"
+                          fill="url(#SVGID_5_)" />
+                      </g>
+                      <path
+                        d="m0 278.495v70.099c0 10.721 8.691 19.412 19.412 19.412h471.176c10.721 0 19.412-8.691 19.412-19.412v-70.099z"
+                        fill="url(#SVGID_6_)" />
+                    </g>
+                    <g fill="#b5dbff">
+                      <path
+                        d="m166.113 285.38h-104.397c-7.252 0-13.131-5.879-13.131-13.131v-126.206c0-7.252 5.879-13.131 13.131-13.131h104.397c7.252 0 13.131 5.879 13.131 13.131v126.206c.001 7.252-5.878 13.131-13.131 13.131z" />
+                      <g>
+                        <g>
+                          <path
+                            d="m286.513 170.911h-71.598c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h71.598c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
+                          <path
+                            d="m451.915 170.911h-125c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h125c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
+                        </g>
+                        <g>
+                          <path
+                            d="m380.317 228.146h71.598c5.247 0 9.5-4.253 9.5-9.5v-19c0-5.247-4.253-9.5-9.5-9.5h-71.598c-5.247 0-9.5 4.253-9.5 9.5v19c0 5.247 4.253 9.5 9.5 9.5z" />
+                          <path
+                            d="m214.915 228.146h125c5.247 0 9.5-4.253 9.5-9.5v-19c0-5.247-4.253-9.5-9.5-9.5h-125c-5.247 0-9.5 4.253-9.5 9.5v19c0 5.247 4.253 9.5 9.5 9.5z" />
+                        </g>
+                        <g>
+                          <path
+                            d="m286.513 285.38h-71.598c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h71.598c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
+                          <path
+                            d="m451.915 285.38h-125c-5.247 0-9.5-4.253-9.5-9.5v-19c0-5.247 4.253-9.5 9.5-9.5h125c5.247 0 9.5 4.253 9.5 9.5v19c0 5.247-4.253 9.5-9.5 9.5z" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path
+                    d="m510 348.594v-81.292l-87.887-87.887c-4.451-6.108-11.656-8.078-19.794-8.078-43.294 0-85.266-14.917-118.85-42.239-16.582-13.491-40.356-13.491-56.938 0-33.584 27.322-75.556 42.239-118.85 42.239-13.519 0-22.477 8.958-22.477 22.477v65.605c0 37.764 7.638 74.623 21.952 108.587h383.432c10.721 0 19.412-8.691 19.412-19.412z"
+                    fill="url(#SVGID_7_)" />
+                  <g>
+                    <g>
+                      <path
+                        d="m402.319 169.335c-43.294 0-85.266-14.917-118.85-42.239-16.582-13.49-40.356-13.491-56.938 0-33.584 27.322-75.556 42.239-118.85 42.239-13.519 0-24.479 10.959-24.479 24.479v65.605c0 84.162 37.898 163.85 103.183 216.964l20.15 16.393c28.229 22.966 68.701 22.966 96.93 0l20.15-16.393c65.285-53.114 103.183-132.805 103.183-216.967 0-25.188 0-48.857 0-65.608-.001-13.52-10.96-24.473-24.479-24.473z"
+                        fill="url(#SVGID_8_)" />
+                      <path
+                        d="m255 488.402c-4.72 0-9.335-1.64-12.997-4.619l-38.539-31.354c-28.149-22.902-51.266-52.329-66.851-85.1s-23.823-69.274-23.823-105.563v-52.063c0-6.298 5.149-11.654 11.439-11.987 42.891-2.268 84.356-18.173 117.774-45.361 3.662-2.979 8.277-4.619 12.997-4.619s9.335 1.64 12.996 4.619c33.419 27.189 74.885 43.094 117.777 45.361 6.288.333 11.437 5.687 11.437 11.985v52.061c0 36.289-8.238 72.792-23.823 105.565-15.585 32.772-38.702 62.2-66.851 85.102l-38.539 31.354c-3.662 2.979-8.277 4.619-12.997 4.619z"
+                        fill="url(#SVGID_9_)" />
+                      <path
+                        d="m255 474.028c-4.321 0-8.548-1.502-11.9-4.229l-35.287-28.708c-25.774-20.969-46.94-47.913-61.21-77.919s-21.813-63.429-21.813-96.655v-47.669c0-5.767 4.715-10.67 10.474-10.975 39.272-2.077 77.238-16.639 107.836-41.533 3.353-2.728 7.579-4.23 11.9-4.23 4.322 0 8.548 1.502 11.9 4.229 30.599 24.894 68.566 39.457 107.838 41.534 5.758.304 10.472 5.207 10.472 10.973v47.668c0 33.227-7.543 66.65-21.813 96.656-14.27 30.007-35.436 56.951-61.21 77.92l-35.287 28.709c-3.352 2.727-7.578 4.229-11.9 4.229z"
+                        fill="url(#SVGID_10_)" />
+                      <path
+                        d="m426.797 193.808c0-13.519-10.96-24.473-24.479-24.473-43.294 0-85.266-14.917-118.85-42.239-8.291-6.745-18.38-10.118-28.469-10.118v393.022c17.175 0 34.351-5.742 48.465-17.225l20.15-16.393c65.285-53.114 103.183-132.805 103.183-216.967 0-25.187 0-48.857 0-65.607z"
+                        fill="url(#SVGID_11_)" />
+                    </g>
+                    <path
+                      d="m383.253 231.347c-7.699-7.698-20.182-6.121-27.881 1.578l-96.058 96.058c-.936.936-3.583 2.711-4.314 2.711s-1.799-.197-2.736-1.134l-36.821-36.821c-7.7-7.699-19.393-7.699-27.092 0s-8.488 18.604-.789 26.303l146.972 146.972c54.815-49.484 87.838-118.676 91.847-192.392z"
+                      fill="url(#SVGID_12_)" />
+                    <path
+                      d="m323.615 476.382c46.598-37.911 79.238-89.363 94.109-146.315l-88.842-88.842c-18.542-19.584-44.784-30.225-73.881-30.225-55.439 0-100.152 44.713-100.152 100.152 0 29.097 10.641 55.338 30.225 73.88l106.777 106.777c3.262 3.262 8.464 3.529 12.043.617z"
+                      fill="url(#SVGID_13_)" />
+                    <circle cx="255" cy="311.151" fill="url(#SVGID_14_)" r="101.729" />
+                    <path
+                      d="m337.149 251.148-77.835 77.835c-.936.936-3.583 2.711-4.314 2.711s-1.799-.197-2.736-1.134l-36.821-36.821c-7.7-7.699-19.393-7.699-27.092 0s-8.488 18.604-.789 26.303l90.264 90.264c45.192-10.361 78.903-50.821 78.903-99.156 0-22.44-7.272-43.18-19.58-60.002z"
+                      fill="url(#SVGID_15_)" />
+                    <path
+                      d="m255 369.546c-11.566 0-22.439-4.504-30.617-12.683l-36.821-36.82c-7.699-7.699-7.699-20.182 0-27.881s20.182-7.699 27.881 0l36.821 36.821c.937.937 2.005 1.134 2.736 1.134s1.799-.197 2.735-1.133l97.637-97.636c7.699-7.699 20.182-7.698 27.881 0 7.699 7.699 7.699 20.182 0 27.881l-97.636 97.636c-8.178 8.177-19.051 12.681-30.617 12.681z"
+                      fill="url(#SVGID_16_)" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="whytext">
+              <h5 class="card-title darkblue">Crypto Settlements</h5>
+              <p class="content">We provide Crypto settlements at the end of every business day if the merchant wishes
+                so</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 col-sm-6 col-12">
+          <div class="table-content">
+            <div class="whyimg">
+
+              <svg id="Capa_1" enable-background="new 0 0 512 512" height="100" viewBox="0 0 512 512" width="100"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        d="m3.806 80.654c0-44.939 36.754-81.294 81.842-80.645 43.675.628 79.188 36.446 79.464 80.124.155 24.461-10.583 46.414-27.645 61.305-1.801 1.571-1.541 4.439.516 5.656l15.197 8.992c2.457 1.454 1.426 5.22-1.429 5.22l-68.818-.017c-43.839-.815-79.127-36.602-79.127-80.635z"
+                        fill="#7acaa6" />
+                    </g>
+                  </g>
+                  <path
+                    d="m153.18 156.086-15.198-8.992c-2.046-1.21-2.33-4.074-.539-5.636 17.257-15.049 28.051-37.322 27.66-62.108-.677-42.873-35.377-78.066-78.238-79.315-6.078-.177-12.01.32-17.727 1.419 37.047 7.102 65.281 39.757 65.527 78.678.119 18.849-6.23 36.209-16.956 49.996-6.477 8.325-4.372 20.397 4.706 25.769l.318.188c2.43 1.438 1.444 5.132-1.339 5.212l30.356.007c2.855.002 3.887-3.765 1.43-5.218z"
+                    fill="#57be92" />
+                  <g>
+                    <g>
+                      <path
+                        d="m396.792 292.755h-182.966c-45.698 0-70.706-53.256-41.519-88.42l1.623-1.956c12.858-15.491 19.896-34.99 19.896-55.122v-35.283c.001-61.842 50.133-111.974 111.975-111.974 61.842 0 111.974 50.132 111.974 111.974v36.474c0 20.343 7.186 40.032 20.29 55.593 29.551 35.092 4.605 88.714-41.273 88.714z"
+                        fill="#c59191" />
+                      <path
+                        d="m492.97 383.43v120.96h-375.32v-120.05c0-27.18 16.29-51.71 41.33-62.25l60.59-26.34 20.4-8.87c15.48-6.73 25.49-22 25.49-38.88v-7.83h79.69v7.43c0 16.95 10.11 32.28 25.7 38.96l81.95 35.13c24.42 10.82 40.17 35.02 40.17 61.74z"
+                        fill="#fff" />
+                      <path
+                        d="m219.565 324.59c20.679 6.179 51.116 12.769 88.217 12.12 34.811-.608 63.387-7.377 83.271-13.728l9.88-23.527-30.086-12.895c-15.586-6.681-25.692-22.006-25.692-38.964v-7.424h-79.69v7.828c0 16.878-10.012 32.147-25.489 38.877l-24.368 10.595z"
+                        fill="#ffcebf" />
+                      <g fill="#8795de">
+                        <path
+                          d="m452.796 321.685-61.732-26.459-.011.001v209.161h101.918v-120.957c0-26.717-15.749-50.922-40.175-61.746z" />
+                        <path d="m219.57 295.75v208.64h-101.92v-120.05c0-27.18 16.29-51.71 41.33-62.25z" />
+                      </g>
+                    </g>
+                    <g>
+                      <path
+                        d="m332.933 283.912c9.168 0 17.904-1.841 25.867-5.163-8.542-7.885-13.646-19.105-13.646-31.152v-7.424h-79.69v7.827c0 6.097-1.313 11.982-3.712 17.332 12.067 11.503 28.392 18.579 46.379 18.579h24.802z"
+                        fill="#ffb09e" />
+                      <path
+                        d="m384.957 120.293v65.925c0 37.14-30.108 67.247-67.247 67.247h-24.801c-37.14 0-67.247-30.108-67.247-67.247v-65.925c0-24.161 19.586-43.748 43.748-43.748h71.8c24.161.001 43.747 19.587 43.747 43.748z"
+                        fill="#ffcebf" />
+                      <path
+                        d="m384.957 154.593c-.03.091-.067.179-.094.272-2.431 8.395-8.811 24.253-24.229 36.142-7.179 5.537-15.368 9.537-24.338 11.891-4.066 1.067-6.498 5.228-5.431 9.294.898 3.419 3.981 5.682 7.358 5.682.639 0 1.289-.081 1.937-.251 10.952-2.874 20.968-7.773 29.771-14.56 6.079-4.688 10.999-9.866 14.982-15.072.015-.59.045-1.177.045-1.771v-31.627z"
+                        fill="#7a6d79" />
+                      <path
+                        d="m327.949 223.939h-17.837c-8.119 0-14.701-6.582-14.701-14.701 0-8.119 6.582-14.701 14.701-14.701h17.837c8.119 0 14.701 6.582 14.701 14.701-.001 8.12-6.582 14.701-14.701 14.701z"
+                        fill="#685e68" />
+                      <g>
+                        <path
+                          d="m321.201 59.097c1.708-21.54 22.33-35.835 42.067-43.239 32.649 19.563 54.507 55.284 54.507 96.115v7.698c-1.805.379-3.601.711-5.377.976-10.873 1.624-20.132.921-26.458 0-40.763-5.43-66.802-35.535-64.739-61.55z"
+                          fill="#b98080" />
+                        <path
+                          d="m305.801 0c25.288 0 48.616 8.386 67.361 22.525-9.351 16.271-30.823 48.441-71.086 72.257-29.89 17.681-58.074 23.622-75.43 25.865h-32.818v-8.674c-.001-61.841 50.131-111.973 111.973-111.973z"
+                          fill="#c59191" />
+                      </g>
+                    </g>
+                  </g>
+                  <path
+                    d="m430.971 504.388h-243.654l-13.439-126.775c-.953-8.992 6.096-16.828 15.138-16.828h240.257c9.042 0 16.091 7.836 15.138 16.828z"
+                    fill="#efedef" />
+                  <path
+                    d="m429.272 360.785h-30.446c9.042 0 16.091 7.836 15.138 16.828l-13.439 126.776h30.446l13.439-126.776c.954-8.992-6.095-16.828-15.138-16.828z"
+                    fill="#e5e1e5" />
+                  <g>
+                    <path
+                      d="m504.5 512h-497c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h497c4.143 0 7.5 3.358 7.5 7.5s-3.357 7.5-7.5 7.5z"
+                      fill="#c9bfc8" />
+                  </g>
+                  <circle cx="309.144" cy="432.587" fill="#c9bfc8" r="21.312" />
+                  <g fill="#fff">
+                    <circle cx="54.014" cy="80.653" r="7.611" />
+                    <circle cx="84.46" cy="80.653" r="7.611" />
+                    <circle cx="114.906" cy="80.653" r="7.611" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="whytext">
+              <h5 class="card-title darkblue">Hedging Services</h5>
+              <p class="content">A merchant has the option to request for hedging services whereby fiat settlements are
+                made at the exact values paid to the merchant. This is so you do not have to worry about the volatility
+                of the bitcoin market</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-12">
+          <div class="table-content">
+            <div class="whyimg">
+
+              <svg id="Capa_1" enable-background="new 0 0 512 512" height="100" viewBox="0 0 512 512" width="100"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        d="m274.106 135.128v63.695h26.187c9.485 0 17.175-7.689 17.175-17.175v-29.346c0-9.485-7.689-17.175-17.175-17.175h-26.187z"
+                        fill="#9bc4f9" />
+                    </g>
+                    <g>
+                      <path
+                        d="m124.002 135.128v63.695h-26.187c-9.485 0-17.175-7.689-17.175-17.175v-29.346c0-9.485 7.689-17.175 17.175-17.175h26.187z"
+                        fill="#9bc4f9" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="m425.765.322h-66.184c-12.41 0-22.47 10.06-22.47 22.47v64.992c0 12.41 10.06 22.47 22.47 22.47 7.335 0 8.416 1.371 10.769 3.606h41.465c2.407-2.285 3.777-3.606 11.188-3.606h3.213v-.005c12.192-.251 21.999-10.212 21.999-22.464v-64.994c0-12.403-10.049-22.458-22.45-22.469z"
+                            fill="#b3e59f" />
+                          <path
+                            d="m489.53.322h-67.305c12.41 0 22.47 10.06 22.47 22.47v64.992c0 12.252-9.806 22.214-21.999 22.464v.009c.102-.002.204-.004.307-.004h66.528c12.41 0 22.47-10.06 22.47-22.47v-64.992c-.001-12.409-10.061-22.469-22.471-22.469z"
+                            fill="#95d6a4" />
+                          <g>
+                            <g>
+                              <g>
+                                <path
+                                  d="m477.406 46.103h-67.417c-4.267 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h67.417c4.267 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                  fill="#f2f9ff" />
+                              </g>
+                              <g>
+                                <path
+                                  d="m379.923 46.103h-8.217c-4.267 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h8.217c4.267 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                  fill="#f2f9ff" />
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="m477.406 82.398h-105.7c-4.267 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h105.7c4.267 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                  fill="#f2f9ff" />
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="m260.309 314.703c-10.592-2.038-18.247-11.307-18.247-22.094v-61.796h-86.016v61.796c0 11.02-7.951 20.117-18.247 22.094l21.25 28.519h80.011c-.001 0 22.891-28.203 21.249-28.519z"
+                                fill="#ffddce" />
+                              <path
+                                d="m391.926 486.499v-36.722c0-63.704-45.211-118.446-107.767-130.485-6.125-1.179-170.209 0-170.209 0-62.557 12.04-107.768 66.781-107.768 130.485v36.722z"
+                                fill="#ffd064" />
+                              <path
+                                d="m277.774 312.374h-220.281c-13.604 0-24.419 11.419-23.682 25.002l8.324 153.363h250.997l8.324-153.363c.737-13.584-10.078-25.002-23.682-25.002z"
+                                fill="#eaf2ff" />
+                              <path
+                                d="m340.615 312.374h-67.305c13.604 0 24.419 11.419 23.682 25.002l-8.324 153.363h67.305l8.324-153.363c.737-13.584-10.078-25.002-23.682-25.002z"
+                                fill="#dbe8f9" />
+                              <path
+                                d="m333.022 495.065v-12.682l-2.704-3.931h-313.704c-9.176-.001-16.614 7.437-16.614 16.613 0 9.175 7.438 16.613 16.614 16.613h299.804c9.171-.005 16.604-7.441 16.604-16.613z"
+                                fill="#9bc4f9" />
+                              <path
+                                d="m381.494 478.451h-51.177v16.614c0 9.175-7.438 16.614-16.614 16.614h67.79c9.175 0 16.614-7.438 16.614-16.614.001-9.176-7.437-16.614-16.613-16.614z"
+                                fill="#7fb2f9" />
+                            </g>
+                          </g>
+                          <path
+                            d="m219.784 478.451c0-13.615 5.101-26.704 14.21-36.823.068-.075.136-.151.204-.228 7.449-8.334 11.978-19.333 11.978-31.39 0-17.572-9.619-32.897-23.878-40.999-2.705-1.537-6.066.396-6.066 3.508v35.057c0 5.876-4.764 10.64-10.64 10.64h-13.08c-5.876 0-10.64-4.764-10.64-10.64v-35.057c0-3.111-3.361-5.045-6.066-3.508-14.259 8.102-23.878 23.427-23.878 40.999 0 12.058 4.529 23.057 11.978 31.39l.204.228c9.109 10.119 14.21 23.208 14.21 36.823z"
+                            fill="#bcd6f9" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="m211.403 258.193c17.134-15.061 26.561-37.17 26.952-60.1l-.28-110.734c-.058-13.669-3.222-26.652-9.306-38.33-9.531-3.546-19.772-5.477-30.257-5.551-44.206.688-84.16 34.468-83.957 83.18l.068 16.33.251 54.833c.569 22.411 9.964 43.945 26.836 58.524 9.976 8.62 22.909 16.419 39.031 20.023 12.295-4.312 22.471-10.975 30.662-18.175z"
+                                fill="#ffddce" />
+                              <path
+                                d="m283.16 125.938c-.161-38.694-25.662-67.888-58.495-78.298 6.996 11.834 11.111 25.763 11.175 41.212l.274 108.249c-.382 22.415-9.597 44.028-26.347 58.751-8.948 7.865-20.319 15.077-34.298 19.156 7.292 2.128 15.291 3.404 24.024 3.465 25.129-.391 44.11-10.768 57.595-22.621 16.75-14.723 25.965-36.336 26.347-58.751z"
+                                fill="#ffcbbe" />
+                              <path
+                                d="m196.128 98.44h5.853c7.944.034 15.782-1.44 23.346-3.87 4.113-1.321 8.412-2.021 12.761-2.053l-.013-5.158c-.065-15.181-3.959-29.517-11.432-42.158.005.002.01.003.015.005-2.903-4.91-6.293-9.465-10.091-13.627l-6.747-2.278h-49.195c-36.415 0-65.936 29.52-65.936 65.936v43.574c0 6.4 4.05 12.1 10.095 14.204l16.242 5.655c5.677 1.977 11.605-2.244 11.596-8.255l-.036-30.726c-.062-14.943 11.854-27.108 26.617-27.171l.322-.002c4.518-.019 8.988.683 13.257 2.054 7.563 2.43 15.401 3.904 23.346 3.87z"
+                                fill="#756e78" />
+                              <path
+                                d="m277.71 63.693h-.866c-4.795 0-8.683-3.888-8.683-8.683 0-14.199-11.51-25.709-25.709-25.709h-32.632c15.737 14.523 25.918 35.149 26.019 59.55l.009 3.749c.909-.055 1.82-.088 2.734-.084l.321.002c14.763.064 26.679 12.228 26.617 27.171l-.03 30.729c-.008 6.01 5.92 10.229 11.596 8.253l16.236-5.655c6.044-2.105 10.094-7.804 10.094-14.204v-49.41c.002-14.199-11.508-25.709-25.706-25.709z"
+                                fill="#665e66" />
+                              <path
+                                d="m302.015 198.737v11.268c0 8.777-7.14 15.917-15.917 15.917h-47.568c-4.267 0-7.726 3.459-7.726 7.726s3.459 7.726 7.726 7.726h47.568c17.297 0 31.37-14.072 31.37-31.37v-28.357c-.001 8.905-6.777 16.227-15.453 17.09z"
+                                fill="#dbe8f9" />
+                              <path
+                                d="m257.363 245.777h-19.391c-7.398 0-13.395-5.997-13.395-13.395 0-7.398 5.997-13.395 13.395-13.395h19.391c7.398 0 13.395 5.997 13.395 13.395 0 7.398-5.997 13.395-13.395 13.395z"
+                                fill="#db636e" />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g>
+                    <path
+                      d="m422.535 110.251c-.103.001-.206.002-.31.002h-62.644c7.247 0 13.122 5.875 13.122 13.123v40.192c0 5.103 6.72 6.963 9.345 2.587l29.7-49.528c2.291-3.82 6.356-6.208 10.786-6.365v-.011z"
+                      fill="#95d6a4" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="whytext">
+              <h5 class="card-title darkblue">Efficient support</h5>
+              <p class="content">We are always willing to to answer your questions and guide you through the use of our
+                services. We are flexible and can tweak our services to suit your business needs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="howitworks">
+    <div class="container">
+      <h2 class="title-f text-center">How to get Payzum Payment ?</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="extraimg">
+              <img src="landing/images/payment/circle1.png" alt="">
+
+            </div>
+            <div class="card-body">
+              <img src="landing/images/pen.svg">
+              <h5 class="card-title darkblue">Free Register</h5>
+              <p class="content">Creating your account is simple, once you click on the "register" button at the top
+                right corner of the page, you would see a simple registration form, once that is completed submit id for
+                verification and enable 2FA to use all our features effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="extraimg">
+              <img src="landing/images/payment/circle2.png" alt="">
+            </div>
+            <div class="card-body">
+              <img src="landing/images/list-check.svg">
+              <h5 class="card-title darkblue">KYC Verify</h5>
+              <p class="content">KYC check is the mandatory process of identifying and verifying the identity of the
+                client when opening an account and periodically over time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="extraimg">
+              <img src="landing/images/payment/circle3.png" alt="">
+            </div>
+            <div class="card-body">
+              <img src="images/wallet2.svg">
+              <h5 class="card-title darkblue">Wallet &amp; Withdrawals</h5>
+              <p class="content">The wallets are automatically created and can be used to store cryptocurrency and
+                withdraw at will. For those using our hedging service, we would always pay fiat based on current values
+                at payment time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="extraimg">
+              <img src="landing/images/payment/circle4.png" alt="">
+            </div>
+            <div class="card-body">
+              <img src="landing/images/bx-user.svg">
+              <h5 class="card-title darkblue">Merchant Use</h5>
+              <p class="content">Click on the ''merchant tools'' to use features such as our simple buttons to place on
+                your site for payment and our API and IPN features. More details are given in that section</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paymentbanner">
+    <div class="container">
+      <h2 class="title-f text-center">Merchants Accepting Payment</h2>
+      <div class="paymentboxfull">
+
+        <div class="payment-logos__wrap">
+          <div class="payment-logos__icon payment-logos__icon--visa"></div>
+          <div class="payment-logos__icon payment-logos__icon--mastercard"></div>
+          <div class="payment-logos__icon payment-logos__icon--ym"></div>
+          <div class="payment-logos__icon payment-logos__icon--mir hidden show-ru"></div>
+          <div class="payment-logos__icon payment-logos__icon--sber hidden show-ru"></div>
+          <div class="payment-logos__icon payment-logos__icon--wire"></div>
+          <div class="payment-logos__icon payment-logos__icon--faster-payments"></div>
+          <div class="payment-logos__icon payment-logos__icon--sepa"></div>
+          <div class="payment-logos__icon payment-logos__icon--pci"></div>
+          <div class="payment-logos__icon payment-logos__icon--btc"></div>
+          <div class="payment-logos__icon payment-logos__icon--eth"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="notification">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-4 col-12">
+          <div class="nofifyflexb">
+            <div class="notify">
+              <img src="landing/images/mobile.png">
+            </div>
+            <div class="notifytext">
+              <h5 class="card-title darkblue">Mobile Friendly</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-12">
+          <div class="nofifyflexb">
+            <div class="notify">
+              <img src="landing/images/advreport.png">
+            </div>
+            <div class="notifytext">
+              <h5 class="card-title darkblue">Advanced Reports</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-12">
+          <div class="nofifyflexb">
+            <div class="notify">
+              <img src="landing/images/like.png">
+            </div>
+            <div class="notifytext">
+              <h5 class="card-title darkblue">Pay with Confidence</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-4 col-12">
+          <div class="nofifyflexb">
+            <div class="notify">
+              <img src="landing/images/secureapi.png">
+            </div>
+            <div class="notifytext">
+              <h5 class="card-title darkblue">Secure Api</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-12">
+          <div class="nofifyflexb">
+            <div class="notify">
+              <img src="landing/images/noti.png">
+            </div>
+            <div class="notifytext">
+              <h5 class="card-title darkblue">Notification</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-12">
+          <div class="nofifyflexb">
+            <div class="notify">
+              <img src="landing/images/lock.png">
+            </div>
+            <div class="notifytext">
+              <h5 class="card-title darkblue">Advanced Security</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonial-section" id="testimonials">
+    <div class="container">
+      <h2 class="title-f pb-3 text-center">Testimonials</h2>
+      <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="testimg">
+                <img src="landing/images/testimonials/test.png" alt="">
+              </div>
+              <p class="content"></p>
+              <p>Payzum global reach and history as a leading cryptocurrency payments provider make us excited to bring
+                their easy-to-use platform to everyone in our ecosystem.</p>
+              <p></p>
+              <h5><span class="title-green">Changpeng Zhao</span><br>Founder and CEO of Binance</h5>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="testimg">
+                <img src="landing/images/testimonials/test1.png" alt="">
+              </div>
+              <p class="content"></p>
+              <p>I can’t imagine it could get much easier to manage incoming payments as a merchant - especially with
+                features like auto conversions for incoming payments which is super handy for accounting purposes.</p>
+              <p></p>
+              <h5><span class="title-green">Leia Vonk</span><br>Founder of BitGild</h5>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators point">
+          <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="light-blue darken-4"></li>
+          <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" class="light-blue darken-4 active"></li>
+        </ol>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="updates">
+    <div class="container">
+      <h2 class="title-f text-center mb-3">Let‘s Keep in Touch</h2>
+      <p class="text-center mb-3">Subscribe to our email newsletter to keep yourself updated</p>
+      <div class="subscibe">
+        <form method="post" id="subscribers" class="subscibefrm" autocomplete="off">
+          <input type="hidden" name="_token" value="BUiT3j1otFrmN4NZlXAQ7ve2kODaCZlBcj4NhGlz">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="email" name="email" class="form-control input-lg" id="email"
+                placeholder="Enter your email address">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default" id="subscribe_bnt"
+                  > Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <span id="subscriber"></span>
+          <div class="footlofo text-center">
+            <img src="landing/images/logo.png">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footerbottom">
+    <section class="footerbox">
+      <div class="footer-gray-bg fnt-reg">
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-4 col-sm-4 col-12">
-                    <div class="nofifyflexb">
-                        <div class="notify">
-                            <img src="landing/images/mobile.png" />
-                        </div>
-                        <div class="notifytext">
-                            <h5 class="card-title darkblue">Mobile Friendly</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-12">
-                    <div class="nofifyflexb">
-                        <div class="notify">
-                            <img src="landing/images/advreport.png" />
-                        </div>
-                        <div class="notifytext">
-                            <h5 class="card-title darkblue">Advanced Reports</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-12">
-                    <div class="nofifyflexb">
-                        <div class="notify">
-                            <img src="landing/images/like.png" />
-                        </div>
-                        <div class="notifytext">
-                            <h5 class="card-title darkblue">Pay with Confidence</h5>
-                        </div>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 listrightbox footlistbg text-right">
+              <img src="landing/images/logo.png" class="flogo">
+              <div class="social-bg">
+                <h5 class="follow">Follow Us On</h5>
+                <ul class="sociallist text-left">
+                    <li><a href="#"><i class="fa fa-facebook"></i></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
             </div>
-
-            <div class="row mt-5">
-                <div class="col-md-4 col-sm-4 col-12">
-                    <div class="nofifyflexb">
-                        <div class="notify">
-                            <img src="landing/images/secureapi.png" />
-                        </div>
-                        <div class="notifytext">
-                            <h5 class="card-title darkblue">Secure Api</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-12">
-                    <div class="nofifyflexb">
-                        <div class="notify">
-                            <img src="landing/images/noti.png" />
-                        </div>
-                        <div class="notifytext">
-                            <h5 class="card-title darkblue">Notification</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-12">
-                    <div class="nofifyflexb">
-                        <div class="notify">
-                            <img src="landing/images/lock.png" />
-                        </div>
-                        <div class="notifytext">
-                            <h5 class="card-title darkblue">Advanced Security</h5>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 footlistbg">
+              <h3 class="h3">Links</h3>
+              <ul class="foot-list">
+                <li><a href="#howitworks" class="scroll">How It Works</a></li>
+                <li><a href="#features" class="scroll">Features</a></li>
+              </ul>
             </div>
-
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 footlistbg">
+              <h3 class="h3">Legal &amp; Privacy</h3>
+              <ul class="foot-list">
+                <li><a href="terms#" class="scroll">Terms &amp; Conditions</a></li>
+                <li><a href="privacy#" class="scroll">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 footlistbg">
+              <h3 class="h3">Support</h3>
+              <ul class="foot-list">
+                <li><a href="#">Email ID: info@payzum.com</a></li>
+                <li><a href="#testimonials" class="scroll">Testimonial</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="linebottom">
+          <div class="row footerbottombg">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="ftext">Copyright © 2021 Payzum Company, All Rights Reserved.</p><br>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+  </footer>
 
-    <section class="testimonial-section" id="testimonials">
-        <div class="container">
-            <h2 class="title-f pb-3 text-center">Testimonials</h2>
-            <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item  active ">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="testimg">
-                                <img src="landing/images/testimonials/test.png" alt="">
-                            </div>
-                            <p class="content">
-                            <p>Payzum global reach and history as a leading cryptocurrency payments provider make us
-                                excited to bring their easy-to-use platform to everyone in our ecosystem.</p>
-                            </p>
-                            <h5><span class="title-green">Changpeng Zhao</span><br />Founder and CEO of Binance</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="testimg">
-                                <img src="landing/images/testimonials/test1.png" alt="">
-                            </div>
-                            <p class="content">
-                            <p>I can&rsquo;t imagine it could get much easier to manage incoming payments as a merchant
-                                - especially with features like auto conversions for incoming payments which is super
-                                handy for accounting purposes.</p>
-                            </p>
-                            <h5><span class="title-green">Wouter Vonk</span><br />Founder of BitGild</h5>
-                        </div>
-                    </div>
-                </div>
-                <ol class="carousel-indicators point">
-                    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0"
-                        class=" active  light-blue darken-4"></li>
-                    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" class=" light-blue darken-4"></li>
-                </ol>
-            </div>
-        </div>
-        </div>
-    </section>
+  
 
-    <section class="updates">
-        <div class="container">
-            <h2 class="title-f text-center mb-3">Let‘s Keep in Touch</h2>
-            <p class="text-center mb-3">Subscribe to our email newsletter to keep yourself updated</p>
-            <div class="subscibe">
-                <form method="post" id="subscribers" class="subscibefrm" autocomplete="off">
-                    <input type="hidden" name="_token" value="1xz8ovzcWwaX6yfVVYgJCgUI5KlbuIExX8uZbYxk">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="email" name="email" class="form-control input-lg" id="email"
-                                placeholder="Enter your email address">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-default" id="subscribe_bnt"> Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                    <span id="subscriber"></span>
-                    <div class="footlofo text-center">
-                        <img src="landing/images/logo.png" />
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="footerbottom">
-        <section class="footerbox">
-            <div class="footer-gray-bg fnt-reg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 listrightbox footlistbg text-right">
-                            <img src="landing/images/logo.png" class="flogo">
-                            <div class="social-bg">
-                                <h5 class="follow">Follow Us On</h5>
-                                <ul class="sociallist text-left">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footlistbg">
-                            <h3 class="h3">Links</h3>
-                            <ul class="foot-list">
-                                <li><a href="#howitworks">How It Works</a></li>
-                                <li><a href="#features">Features</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footlistbg">
-                            <h3 class="h3">Legal & Privacy</h3>
-                            <ul class="foot-list">
-                                <li><a href="#terms">Terms & Conditions</a></li>
-                                <li><a href="#privacy">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footlistbg">
-                            <h3 class="h3">Support</h3>
-                            <ul class="foot-list">
-                                <li><a href="#">Email ID: info@payzum.com</a></li>
-                                <li><a href="#testimonials">Testimonial</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr class="linebottom">
-                    <div class="row footerbottombg">
-                        <div class="col-md-12 col-sm-12 col-12">
-                            <p class="ftext">Copyright © 2022 Payzum Company, All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <script src="landing/js/jquery.min.js"></script>
-    <script src="landing/js/bootstrap.min.js"></script>
-    <script src="landing/js/mdb.min.js"></script>
-    <script src="landing/js/formvalidation.js"></script>
 
-    <script type="text/javascript">
-        var TxtRotate = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
+  <!-- Optional JavaScript; choose one of the two! -->
 
-        TxtRotate.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
+  <script src="landing/js/tsparticles.min.js"></script>
+  <!-- <script src="js/tsparticles_stats_config.js"></script> -->
+  <script src="landing/js/mdb.min.js"></script>
+  <script src="landing/js/formvalidation.js"></script>
 
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-            var that = this;
-            var delta = 300 - Math.random() * 100;
 
-            if (this.isDeleting) { delta /= 2; }
+  <script type="text/javascript">
+    var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
 
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
 
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
 
-        window.onload = function () {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #ccc }";
-            document.body.appendChild(css);
-        };
-    </script>
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.06em solid #ccc }";
+      document.body.appendChild(css);
+    };
+  </script>
+  <style type="text/css">
+    .txt-rotate>.wrap {
+      border-right: 0.06em solid #ccc
+    }
+  </style>
+  <script>
+    var o = document.getElementById("interactive");
+    var top = document.getElementById("top");
+
+    top.addEventListener("mousemove", function (t) {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      var e = -(w / 2 - t.pageX) / 70;
+      var n = (h / 2 - t.pageY) / 50;
+      o.style.transform = 'rotateY(' + e + 'deg) rotateX(' + n + 'deg)';
+
+    })
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script> -->
+<script  src="landing/js/smooth.js"></script>
 </body>
 
 </html>

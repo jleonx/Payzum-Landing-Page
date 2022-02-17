@@ -47,9 +47,16 @@ footer
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-}
+    left: 0;
+    top: -104px;
+} 
+
+
+  
 .bannerrighticon img
-{width:100%;max-width: 580px;position: relative;top: 31px;}
+{
+  
+}
 .banner-container .h1
 {
     font-size: 44px;
@@ -80,15 +87,17 @@ h4.subhed {
     text-transform: uppercase;
 }
 .top-menu{
-	background-color:transparent !important;
+	background-color:#044e976e  !important;
 	color:#fff;
 	box-shadow:none;
 	position: absolute;
 	width:100%;
 	left:0px;
-	top:0px;
+	top:50px;
 	z-index: 99;
 	padding: 8px 10px;
+    border-bottom: 1px solid #ebeef242;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 34%);
 }
 .darkblue
 {
@@ -100,15 +109,16 @@ h4.subhed {
 }
 .btn, .btn-primary
 {
-    padding: 12px 25px;
-    text-transform: uppercase;
+    /* padding: 12px 25px; */
+    margin: 4px;
+    /* text-transform: uppercase; */
     font-size: 14px;
-    line-height:normal;
+    /* line-height:normal; */
     background: transparent;
     color:#fff;
     font-weight: 700;
     border-radius: 50px;
-    box-shadow: none;
+    /* box-shadow: none; */
     border: 1px solid #fff;
 }
 .btn-primary
@@ -124,6 +134,19 @@ h4.subhed {
     padding: 12px 24px;
     font-weight: 400;
 }
+
+
+#header_area ul#nav li a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #df4a43;
+    width: 0%;
+    height: 5px;
+    content: "";
+    transition: 0.5s;
+}
+
 .top-menu .navbar-nav > li.nav-item > a.btn
 {font-size: 14px;padding: 10px 23px;color: #fff;margin-right: 6px;margin-top: 4px;}
 
@@ -158,7 +181,12 @@ h4.subhed {
 	margin-right:7px;
 }
 .WhyChoose
-{background-image:url("../images/whybg.png");background-repeat:no-repeat;background-position: center bottom;/* padding-top: 148px; padding-bottom: 208px; */background-size: cover;}
+{background-image:url("../images/whybg.png");
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    /* padding-top: 148px; */
+    /* padding-bottom: 208px; */
+    background-size: cover;}
 .feature-section .card {
 
 box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 21%);
@@ -240,8 +268,13 @@ box-shadow: 0 10px 20px 0 rgb(0 0 0 / 18%);
 }
 
 
-.how-it-works{background-image: url(../images/howbg.png);background-repeat: no-repeat;background-position: center top;padding-bottom: 0px;background-size: cover;
-    /* padding-top: 180px;*/} 
+.how-it-works{
+    background-image: url(../images/howbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-bottom: 0px;background-size: cover;
+    /* padding-top: 180px;*/
+} 
 .testimonial-section{
     /* background-image: url(../images/testimonial-bg.png); */
     /* background-repeat: no-repeat; */
@@ -267,7 +300,6 @@ box-shadow: 0 10px 20px 0 rgb(0 0 0 / 18%);
 }
 .testimonial-section .carousel-inner
 {
-    
     border-radius: 20px;
 	overflow:inherit;
 }
@@ -302,6 +334,7 @@ font-weight: 500;
 footer{
     background: none;
 }
+
 .left-nav-box .navbar-brand img {
     margin: 10px auto;
 }
@@ -1639,7 +1672,7 @@ padding-left: 69px;
         text-align: center;
         width: 100%;
         display: inline-block;
-        padding-top: 216px;
+        padding-top: 80px;
     }
     .navbar-brand img {
         max-width: 146px;
@@ -1848,7 +1881,7 @@ margin-bottom: 15px;
     background-image: url(../images/bluebg.png);
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-top: 151px;
+    padding-top: 264px;
     padding-bottom: 198px;
     background-size: cover;
     width: 100%;
@@ -2238,8 +2271,8 @@ li.light-blue.darken-4 {
     }
     .paymentbanner
     {
-        margin-bottom: -158px;
-        margin-top: -100px;
+        margin-bottom: -68px;
+        margin-top: 0px;
     }
 	.whytext
 	{
@@ -2373,8 +2406,7 @@ p
 position:relative;
 }
 
-
-/* Agregando logos Merchants Accepting Payment */
+/* Agregando algo nuevo */
 
 .payment-logos__wrap {
     display: -ms-flexbox;
@@ -2456,4 +2488,120 @@ position:relative;
     height: 40px;
 }
 
-/* Fin logos Merchants Accepting Payment */
+
+
+/* Animacion Banner */
+
+.bg-animado-canvas
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn--green {
+    -webkit-box-shadow: 0 3px 32px #10e378;
+    box-shadow: 0 3px 32px #10e378;
+    background-color: #10e378;
+    -webkit-transition: background-color .4s,-webkit-box-shadow .4s;
+    transition: background-color .4s,-webkit-box-shadow .4s;
+    -o-transition: background-color .4s,box-shadow .4s;
+    transition: background-color .4s,box-shadow .4s;
+    transition: background-color .4s,box-shadow .4s,-webkit-box-shadow .4s;
+    border: 1px solid #5beaa1;
+}
+.btn--green:hover {
+    background-color: #41bc7e;
+    color: #fff;
+    -webkit-box-shadow: 0 3px 32px rgb(62 213 201 / 54%);
+    box-shadow: 0 3px 32px rgb(87 224 213 / 54%);
+    background-color: #41bc7e;
+}
+
+.woman
+{
+    position: absolute;
+    width: 40.1%;
+    left: 5.6%;
+    top: 43.1%;
+    transform-style: preserve-3d;
+    transform: translate3d(-10%, 10%, 40px);
+}
+
+.man
+{
+    position: absolute;
+    width: 26.5%;
+    left: 35%;
+    top: 66.3%;
+    transform-style: preserve-3d;
+    transform: translate3d(150%, -50%, 35px);
+}
+
+.char
+{
+    position: absolute;
+    width: 26.7%;
+    left: 10%;
+    top: 68.8%;
+    transform-style: preserve-3d;
+    transform: translate3d(215%, -280%, 25px);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 34%);
+}
+.coin-b
+{
+    position: absolute;
+    width: 24.4%;
+    left: 39.9%;
+    top: 31.3%;
+    transform-style: preserve-3d;
+    transform: translate3d(0%, 10%, 40px);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bg-img
+{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    transform-style: preserve-3d;
+    transform: translate3d(0%, 0%, -50px);
+}
+
+
+.perspective {
+    width: 100%;
+    perspective: 1000px;
+  }
+  
+  #top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* .card {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    box-shadow: none !important;
+    transform-style: preserve-3d;
+    transition: transform 0.05s linear;
+    position: relative;
+    background-color: transparent !important;
+  }
+  .card .thumb {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  } */
+
+  /* Fin Animacion Banner */
