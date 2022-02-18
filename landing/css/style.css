@@ -281,7 +281,7 @@ box-shadow: 0 10px 20px 0 rgb(0 0 0 / 18%);
     /* background-position: center top; */
     /* background-size: cover; */
     padding-bottom: 10px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 .testimonial-section .carousel-caption
 {
@@ -970,7 +970,7 @@ margin-right:0px !important;
     }
     .banner-container 
     {
-        padding: 7vh 0px !important;
+        padding: 20vh 0px !important;
         padding-bottom: 31px;
     }
     .banner-container h1, .banner-container .h2
