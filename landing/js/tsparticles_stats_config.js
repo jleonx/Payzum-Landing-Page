@@ -123,22 +123,22 @@ tsParticles.load("tsparticles", {
       },
       image: [
         {
-          src: "images/coins/BTC.png",
+          src: "landing/images/coins/BTC.png",
           width: 32,
           height: 32
         },
         {
-          src: "images/coins/ETH.png",
+          src: "landing/images/coins/ETH.png",
           width: 32,
           height: 32
         },
         {
-          src: "images/coins/USDT.png",
+          src: "landing/images/coins/USDT.png",
           width: 32,
           height: 32
         },
         {
-          src: "images/coins/LTC.png",
+          src: "landing/images/coins/LTC.png",
           width: 32,
           height: 32
         },
